@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title></title>
+    <link rel='stylesheet' href='/css/common.css' />
+    <link rel='stylesheet' href='/css/inverst.css' />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body class="_inverstSec paddingBtm">
+  	<div id="header">
+
+	</div><!--头部-->
+
+	<section class="lrList">
+		<ul id="list">
+			<% for(var i = 0 ;i< list.length;i++){%>
+		<li class="__bacthNo">
+			<a class="item <% if(list[i].state != 10){%>end<%}%> <%if(list[i].isNovice == 1){%>novice<%}%> <%if(list[i].countdown*1 > -1){%>notStart<%}%>" href="/views/static/project/proDetail.html?pid=<%=list[i].id%>">
+				<div class="f_right chartBar">
+					<div class="chart">
+						<div id="chart" data-value="<%=list[i].scales%>">
+
+						</div>
+						<div class="value"><%=list[i].scales%>%</div>
+					</div>
+					<p>完成度</p>
+				</div>
+				<!-- 右边图表 -->
+				<div class="proDetail">
+					<h4 class="ellipsis"><%=list[i].name%></h4>
+					<table>
+						<thead>
+						<tr>
+							<th width="100">预期年化</th>
+							<th width="60">项目期限</th>
+							<th></th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><span class="font_huge main_red"><%=list[i].yearRate%>%</span> <%if(list[i].addRate*1){%><span class="addRate">+<%=list[i].addRate%>%</span><%}%></td>
+							<td><span class="font_huge1">
+								<%=list[i].cycle%>
+								<% if(list[i].cycleType*1 == 1){%>
+								天
+								<%}else if(list[i].cycleType*1 == 2){%>
+								周
+								<%}else if(list[i].cycleType*1 == 3){%>
+								月
+								<%}else if(list[i].cycleType*1 == 4){%>
+								季
+								<%}else if(list[i].cycleType*1 == 5){%>
+								年
+								<%}%>
+							</span></td>
+							<td class="align_center"><%if(list[i].countdown*1 >1){%><span class="main_red countdown" data-time="<%=list[i].countdown%>"><%=Math.floor(list[i].countdown/60)%>分<%=list[i].countdown%60 %>分 </span><%}%></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 项目信息 -->
+			</a>
+			<!-- 项目 -->
+		</li>
+	<%}%>
+		</ul>
+		<div class="lrLoading">	
+			加载中...
+		</div>
+	</section>
+	<!--列表-->
+    
   </body>
 </html>

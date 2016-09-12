@@ -1,0 +1,131 @@
+._inverstSec{
+
+}
+
+._inverstSec > .lrList  li{
+	padding:4px 0 0 0 ;
+	overflow:hidden;
+}
+
+/*列表*/
+._inverstSec .lrList .item{
+	padding:10px 10px;
+	display: block;
+	background-color: #Fff;
+	margin-bottom:10px;
+	position:relative;
+}
+
+._inverstSec .lrList .item.novice:after{
+	width:40px;
+	height:40px;
+	display:block;
+	position:Absolute;
+	right:-4px;
+	top:-4px;
+	content:'';
+	background:url('/views/styles/images/tips120_120.png') no-repeat 0 0;
+	background-size:cover;
+}
+
+._inverstSec .lrList .item.notStart:before{
+	width:35px;
+	height:43px;
+	display:block;
+	position:Absolute;
+	right:95px;
+	top:-4px;
+	content:'';
+	background:url('/views/styles/images/icon_count.png') no-repeat 0 0;
+	background-size:cover;
+}
+
+._inverstSec .lrList .item.end .main_red,
+._inverstSec .lrList .item.end .chart{/*结束*/
+	color:#aaa !important;
+}
+
+._inverstSec .lrList .item > .chartBar{
+	width:70px;
+}
+
+._inverstSec .lrList .item > .chartBar > .chart{
+	width:64px;
+	height:64px;
+	line-height: 64px;
+
+	border-radius: 50%;
+	margin:0 auto;
+	color: #e4393c;
+	position: relative;
+}
+
+._inverstSec .lrList .item > .chartBar > .chart > .value{
+	display: block;
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	line-height:64px;
+	font-size:1.6rem;
+}
+
+._inverstSec .lrList .item > .chartBar > p{
+	color:#aaa;
+	font-size:1.4rem;
+	margin-top: 10px;
+}
+
+._inverstSec .lrList .item > .proDetail{
+	margin-right: 70px;
+	text-align: left;
+}
+
+._inverstSec .lrList .item > .proDetail > h4{
+	font-size:1.7rem;
+	color:#333;
+	line-height:2.0rem;
+}
+
+._inverstSec .lrList .item > .proDetail > table{
+	width: 100%;
+	text-align: left;
+	margin-top:10px;
+}
+
+._inverstSec .lrList .item > .proDetail > table th{
+	font-size:14px;
+	color:#aaa;
+	padding:8px 0;
+}
+
+._inverstSec .lrList .item > .proDetail > table td{
+	padding:8px 0
+}
+
+._inverstSec .lrList .item > .proDetail > table td > .font_huge{
+	font-size:1.8rem !important;
+}
+
+._inverstSec .lrList .item > .proDetail > table td >  .addRate{
+	    font-size: 1.2rem;
+        color: #43cff8;
+        display:inline-block;
+        /* border:1px solid  #43cff8; */
+        box-shadow:0 0 1px #43cff8;
+        border-radius:1.4rem;
+        padding:2px;
+        margin-left:5px;
+}
+
+._inverstSec .lrList .item > .proDetail > table td > .countdown{
+	font-size:1.6rem;
+	color:#e4393c !important;
+	
+}
+
+._inverstSec .lrList .item > .proDetail > table td > .font_huge1{
+	font-size:1.6rem !important;
+	color:#333;
+}

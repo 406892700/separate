@@ -7,13 +7,15 @@
 */
 
 var path = require('path');
-var query = require(path.join(global.__cfg.APP_PATH, 'mysql'));
+var query = require(path.join($APP_PATH, 'mysql'));
+var request = require(path.join($APP_PATH, 'request'));
+var T = require(path.join($APP_PATH, 'tool'));
 module.exports = function(router){
 	router.get('/', function(req, res, next) {
 		var  redis = require('redis');
 		var client = redis.createClient({
-			host:'localhost',
-			port:6379	
+			host:$CFG.REDIS_HOST,
+			port:$CFG.REDIS_PORT	
 		});
 
 		client.HMSET('xhy',{name:'xhy',age:12,'weight':82.5},function(a,b){
@@ -30,5 +32,16 @@ module.exports = function(router){
 		});
 
 	  res.send('respond with a resource');
+	});
+
+	router.get('/testDemo',(req,res,next)=>{
+		request({
+			url:'getProjectList',
+			data:req.param
+		},function(err,data){
+			console.log(data);
+			res.render('index',data.result);
+			//res.json(data);
+		});
 	});
 }

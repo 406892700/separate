@@ -9,6 +9,9 @@ var ejs = require('ejs');
 
 var app = express();
 
+//全局配置对象
+require('./config');//全局配置对象
+
 // view engine setup
 //模板引擎ejs
 app.set('views', path.join(__dirname, 'views'));//页面文件路径
@@ -23,8 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'views/static')));//静态资源路径
 
-//全局配置对象
-global.__cfg = require('./config');//全局配置对象
+
 var routes = require('./routes');//路由配置文件
 
 //读取路由配置
