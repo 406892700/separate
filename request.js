@@ -2,7 +2,7 @@
  * 获取api数据的方法
  */
 
-const https = require('https');
+const https = $CFG.API_PROTOCOL === 'https'? require('https') : require('http');
 const querystring = require('querystring');
 
 const fetchSOAP = (obj,callback)=>{
@@ -10,8 +10,8 @@ const fetchSOAP = (obj,callback)=>{
 		data:null,
 		url:'',
 		ifRoot:false,
-		method:'GET',
-	}
+		method:'GET'
+	};
 
 	obj = Object.assign({},d_obj,obj);
 
@@ -36,8 +36,9 @@ const fetchSOAP = (obj,callback)=>{
 	}
 
 	var req = https.request(options, (res) => {
-	  console.info('statusCode:', res.statusCode);
-	  console.info('headers:', res.headers);
+	  console.info('----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+	  console.info('请求状态码:', res.statusCode);
+	  console.info('请求头:', res.headers);
 	  var chunk = '';
 	  
 	  res.on('data', (data) => {
@@ -46,8 +47,9 @@ const fetchSOAP = (obj,callback)=>{
 	  });
 
 	  res.on('end', () => {
-
 		callback(null,JSON.parse(chunk));
+		  console.log('接口数据',JSON.parse(chunk));
+		  console.log('----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------');
 	  });
 	});
 
@@ -57,6 +59,6 @@ const fetchSOAP = (obj,callback)=>{
 	});
 
 	req.end();
-}
+};
 
 module.exports = fetchSOAP;

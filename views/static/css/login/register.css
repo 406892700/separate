@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+._registerSec  .formList{
+			
+}
+
+._registerSec  .formList > .formItem{
+	background-color:#fff;
+	padding:10px 20px;
+	margin-top:10px;
+	overflow:hidden;
+}
+
+._registerSec  .formList > .formItem > p{
+	line-height:3.0rem;
+	height:3.0rem;
+}
+
+._registerSec  .formList > .formItem > p.label{
+	float:left;
+	width:30px;
+	text-aign:center;
+}
+
+._registerSec  .formList > .formItem > p.textField{
+	margin-left:40px;
+	text-align:left;
+	overflow:hidden;
+}
+
+._registerSec  .formList > .formItem > p.textField > input{
+	/* background-color:#eee; */
+	width:90%;
+	float:left;
+	height:3.0rem;
+	line-height:3.0rem;
+	padding:0;
+	font-size:1.4rem;
+}
+
+._registerSec  .formList > .formItem > p.label > span.icon{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	background-image:url(/views/styles/images/new_register_sprite.png);
+	background-size:20px;
+	vertical-align:middle;
+}
+
+._registerSec  .formList > .formItem > p.label > span.icon.icon-mobile{
+	background-position:0 -40px;
+}
+
+._registerSec  .formList > .formItem > p.label > span.icon.icon-vcode{
+	background-position:0 -60px;
+}
+
+._registerSec  .formList > .formItem > p.label > span.icon.icon-psw{
+	background-position:0 0;
+}
+
+._registerSec  .formList > .formItem > p.label > span.icon.icon-invite{
+	background-position:0 -20px;
+}
+
+._registerSec  .formList > .formItem.sendVcode > .textField{
+	margin-right:100px;
+}
+
+._registerSec  .formList > .formItem.sendVcode > .other{
+	width:90px;
+	float:right;
+}
+
+._registerSec  .formList > .formItem .imgVCode{
+	    border: 1px solid #eee;
+	    display: inline-block;
+	    width: 90px;
+	    height: 36px;
+	}
+	
+._registerSec  .formList > .formItem 	.imgVCode > img{
+		width:100%;
+		height:100%;
+	}
+
+._registerSec  .formList > .formItem.sendVcode > .other >.btn{
+	display:inline-block;
+	width:90px;
+	height:3.0rem;
+	line-height:3.0rem;
+	background-color:#fff;
+	color:#e4393c;
+	border:1px solid #e4393c;
+	font-size:1.4rem;
+}
+
+._registerSec  .formList > .formItem.sendVcode > .other >.btn.disabled{
+	background-color:#fff !important;
+}
+
+._registerSec .btnArea{
+	    position: absolute;
+	    bottom: 0;
+	    width: 100%;
+	    padding-bottom: 70px;
+}
+
+._registerSec .btnArea .btn{
+	width: 160px;
+    height: 45px;
+    font-size: 1.8rem;
+    line-height: 45px;
+}
+
+
+
+._registerSec .tips{
+	margin-top:10px;
+	text-align:left;
+	padding:0 20px;
+}
+
+._registerSec .tips > p{
+	line-height:2.0rem;
+	font-size:1.4rem;
+}

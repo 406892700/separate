@@ -195,7 +195,7 @@ a:active{opacity:.8;}
 .lrNavigator > a > span{
 	width:25px;
 	height: 25px;
-	background-image: url(../images/icon_navigator.png);
+	background-image: url(/images/icon_navigator.png);
 	display: inline-block;
 	vertical-align: middle;
 	background-size:25px;
@@ -279,7 +279,7 @@ section.lrProDetail.novice:after{
 	right:-6px;
 	top:-6px;
 	content:'';
-	background:url(/views/styles/images/tips240_240.png) no-repeat 0 0;
+	background:url(/images/tips240_240.png) no-repeat 0 0;
 	background-size:cover;
 }
 
@@ -292,7 +292,7 @@ section.lrProDetail .yearRate{
 	margin:15px auto 0 auto;	
 	position: relative;
 	width:160px;
-
+	height:160px;
 }
 section.lrProDetail .yearRate .chartData{
 	position: absolute;
@@ -330,7 +330,7 @@ section.lrProDetail .yearRate .countdown{
 section.lrProDetail .yearRate .countdown > div.icon_count{
 	width:30px;
 	height:30px;
-	background:url(/views/styles/images/icon_countdown.png) no-repeat  0 0;
+	background:url(images/icon_countdown.png) no-repeat  0 0;
 	margin:20px auto;
 	background-size:cover;
 }
@@ -444,7 +444,7 @@ section.lrProDetail .tips{
 	content:'';
 	width:8px;
 	height: 15px;
-	background: url('/views/styles/images/icon_item_arrow.png') no-repeat 0% 0%, #fff;
+	background: url('images/icon_item_arrow.png') no-repeat 0% 0%, #fff;
 	position: absolute;
 	right:10px;
 	top:50%;
@@ -655,7 +655,7 @@ section.lrProDetail .tips{
 	right: 10px;
 	width:40px;
 	height: 40px;
-	background-image:url(/views/styles/images/sideBar_sprite.png);
+	background-image:url(images/sideBar_sprite.png);
 	background-size: 80px;
 	background-color: #fff;
 	box-shadow: 0 0 4px #ddd;
@@ -882,7 +882,7 @@ section.lrProDetail .tips{
 	transform: translate(-50%,-50%);
 	border-radius:50%;
 	display:none;
-	background-image:url(/views/styles/images/guide_mask_icon.png);
+	background-image:url(images/guide_mask_icon.png);
 	background-size: 180px;
 	border:1px solid #aaa;
 }
@@ -956,7 +956,7 @@ section.lrProDetail .tips{
 	display: inline-block;
 	width:20px;
 	height:20px;
-	background:url('/views/styles/images/arrow_top.png') no-repeat 0 0;
+	background:url('images/arrow_top.png') no-repeat 0 0;
 	background-size: cover;
 	vertical-align: middle;
 	margin-right: 5px;
@@ -975,7 +975,7 @@ section.lrProDetail .tips{
 }
 
 .f_preLoading.spin{
-	background-image:url('/views/styles/images/icon_loading.png');
+	background-image:url('images/icon_loading.png');
 	-webkit-animation:'spin' 0.5s linear infinite normal;
 	animation:'spin' 0.5s linear infinite normal;
 }

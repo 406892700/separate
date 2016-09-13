@@ -9,11 +9,11 @@
     }
 
     gen_obj.next();//先执行一次到达第一个异步操作的位置
-}
+};
 /*
 const extends = Object.assign;*/
 
 module.exports = {
 	sync:generator,
 	extends:Object.assign
-}
+};

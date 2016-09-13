@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/activity/activity.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_activitySec paddingBtm">
+    <nav class="lrToggle">
+        <a href="/act/activity" class="actived">活动</a>
+        <a href="/act/notice">公告</a>
+    </nav>
+    <!-- 公用tab切换 -->
+
+    <section class="activityList">
+        <ul id="list">
+            <% for(var i=0;i< list.length;i++){%>
+                <li class="__bacthNo">
+                    <a href="<%=list[i].url%>" class="actItem">
+                        <fugure class="imgWrap">
+                            <img src="/views/styles/images/defaultPic.png" data-original="<%=list[i].imgUrl%>" alt="<%=list[i].title%>" width="100%" class="lazy">
+                        </fugure>
+                        <div class="activityInfo">
+                            <%if(list[i].state == 0){%>
+                            <div class="status f_right going">进行中</div>
+                            <%}else if(list[i].state == 1){%>
+                            <div class="status f_right">未开始</div>
+                            <%}else if(list[i].state == 2){%>
+                            <div class="status f_right end">结束</div>
+                            <%}%>
+                            <div class="activitDetail">
+                                <p class="title"><%=list[i].title%></p>
+                                <p class="dateRange">活动时间：<span class="main_red"><%=list[i].beginDate.replace(/-/g,'.')%>-<%=list[i].endDate.replace(/-/g,'.')%></span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            <%}%>
+        </ul>
+    </section>
+    <!-- 活动列表页面 -->
+    <div class="lrLoading">
+
+    </div>
+    <% include ../../template/navBar.html%>
+</body>
+
+</html>

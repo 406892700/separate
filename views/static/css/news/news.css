@@ -1,0 +1,50 @@
+._newCenterSec{
+
+}
+
+._newCenterSec .lrTabNav{
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+}
+._newCenterSec .lrTabNav > a{
+	display: inline-block;
+	width: 70px;
+	line-height: 40px;
+	font-size: 1.8rem;
+	color:#aaa;
+}
+
+._newCenterSec .lrTabNav > a.actived{
+	color:#e4393c;
+	border-bottom:2px solid #e4393c;
+	height: 38px;
+}
+
+._newCenterSec .lrList2{
+	margin-top: 10px;
+}
+
+._newCenterSec .lrList2 .item{
+	margin-bottom:10px;
+	background-color: #fff;
+	background: url(../../images/icon_item_arrow.png) no-repeat 96% 50%,#fff;
+	background-size: 6px 12px;
+	text-align: left;
+}
+
+._newCenterSec .lrList2 .item > a{
+	display: block;
+	padding:10px 25px;
+}
+
+._newCenterSec .lrList2 .item  .title{
+	font-size:1.6rem;
+	color:#333;
+}
+
+._newCenterSec .lrList2 .item  .date{
+	font-size:1.4rem;
+	color:#aaa;
+	margin-top: 15px;
+}

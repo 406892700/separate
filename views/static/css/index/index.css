@@ -1,0 +1,126 @@
+._indexSec{
+
+}
+
+
+/* 首页轮播 */
+._indexSec .slider{
+
+}
+._indexSec .slideWrap{
+	position: relative;	
+	overflow: hidden;
+	width: 100%;
+/*	height: 100px;*/
+}
+
+._indexSec .slideWrap > img{
+	width:100%;
+}
+
+._indexSec .slideWrap ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+._indexSec .slideWrap ul > li{
+	/* width:377px; */
+	height: 100%;
+}
+
+._indexSec .slideWrap ul > li img{
+	display: block;
+	width:100%;
+}
+
+/* 轮播控制 */
+._indexSec .slideWrap aside{
+	width:100%;
+	position: absolute;
+	font-size:1.8rem;
+	bottom:10px;
+	left:0;
+	z-index: 99;
+}
+
+._indexSec .slideWrap aside > a{
+	color:#fff;
+	font-size:1.4rem;
+	margin:0 0px;
+}
+
+._indexSec .slideWrap aside > a:after{
+	content:'○';
+	text-shadow:0 0 1px #fff;
+}
+
+._indexSec .slideWrap aside > a.actived:after{
+	content:'●';
+	text-shadow:0 0 :;px #fff;
+}
+
+/* 活动section */
+._indexSec section.activity{
+	margin:10px 5px;
+	overflow: hidden;
+}
+
+._indexSec section.activity > .itemWrap{
+	width:50%;
+	float: left;
+	padding:0 5px;
+}
+
+._indexSec section.activity > .itemWrap > .item{
+	display: block;
+	width:100%;
+	background-color:#fff;
+	border:1px solid #eee;
+	padding:20px 10px;
+	text-align: left;
+}
+
+._indexSec section.activity > .itemWrap > .item > .f_left{
+	width:40px;
+	height: 40px;
+	background-image: url('/images/sprite_index.png');
+	background-size: 80px;
+	margin-top: 10px;
+}
+
+._indexSec section.activity > .itemWrap > .item > .content{
+	margin-left: 50px;
+}
+
+._indexSec section.activity > .itemWrap > .item > .content > h4{
+	font-size:1.8rem;
+	margin-bottom: 10px;
+}
+
+._indexSec section.activity > .itemWrap > .item > .content > p{
+	color:#333;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+}
+
+/* 不同的状态 */
+
+._indexSec section.activity > .itemWrap > .item.newuser h4{
+	color:#54d6ff; 
+}
+
+._indexSec section.activity > .itemWrap > .item.newuser .f_left{
+	background-position: -40px 0;
+}
+
+._indexSec section.activity > .itemWrap > .item.redbag h4{
+	color:#ff4444; 
+}
+
+._indexSec section.activity > .itemWrap > .item.redbag .f_left{
+	background-position: 0 0;
+}
+
+

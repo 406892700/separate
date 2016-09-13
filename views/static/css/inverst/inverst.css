@@ -24,7 +24,7 @@
 	right:-4px;
 	top:-4px;
 	content:'';
-	background:url('/views/styles/images/tips120_120.png') no-repeat 0 0;
+	background:url('/images/tips120_120.png') no-repeat 0 0;
 	background-size:cover;
 }
 
@@ -36,7 +36,7 @@
 	right:95px;
 	top:-4px;
 	content:'';
-	background:url('/views/styles/images/icon_count.png') no-repeat 0 0;
+	background:url('/images/icon_count.png') no-repeat 0 0;
 	background-size:cover;
 }
 

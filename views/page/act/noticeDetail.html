@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=detail.title%></title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/activity/activity.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_activityDetailSec paddingBtm">
+    <section class="activityList">
+        <header>
+            <div class="title"><%=detail.title%></div>
+            <aside class="date"><%=detail.addTime%></aside>
+        </header>
+    </section>
+    <article>
+        <%-detail.content%>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,645 @@
+._proDetailSec{
+		padding-bottom:100px;
+}
+
+._proDetailSec .lrProDetail{
+	margin-top: 10px;
+}
+
+
+._proDetailSec .allInverst{/*全部投入*/
+	height: 2.4rem;
+    line-height: 2.4rem;
+    padding: 0 5px;
+    margin-left:5px;
+    font-size:1.2rem;
+}
+
+._proDetailSec .icon{
+	display: inline-block;
+	vertical-align: middle;
+	width:15px;
+	height: 15px;
+	background-image: url('../../images/proDetail_sprite.png');
+	background-size: 45px 15px;
+	margin-right: 10px;
+}
+
+._proDetailSec .icon.icon-1{
+	background-position: -15px 0;
+}
+
+._proDetailSec .icon.icon-2{
+	background-position: -30px 0;
+}
+
+._proDetailSec .icon.icon-3{
+	background-position: -45px 0;
+}
+
+._proDetailSec .btnArea{
+	/* margin-top:40px;
+	background-color: #e4393c;
+	overflow: hidden; */
+	    margin-top: 40px;
+    background-color: #e4393c;
+    overflow: hidden;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 50px;
+}
+
+._proDetailSec .btnArea.disabled{
+	background-color: #aaa !important
+}
+
+._proDetailSec .btnArea .calculateBtn{
+	width:40px;
+	height: 40px;
+	background:url(/views/styles/images/Calculator.png) no-repeat 50% 50%,rgba(0,0,0,0.1);
+	background-size: 25px ;
+	display: block;
+	float: left;
+}
+
+._proDetailSec .btnArea .btn{
+	display: block;
+	/* background-color:#e4393c; */
+	color:#fff;
+	font-size: 1.8rem;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 40px;
+	border-radius:0;
+}
+
+/*了解项目*/
+._proDetailInfoSec{
+	padding-bottom:30px;
+}
+
+._proDetailInfoSec > .sectionInfo{
+
+}
+
+._proDetailInfoSec > .sectionInfo > .title{
+	height: 40px;
+	line-height: 40px;
+	color:#333;
+	font-size: 1.6rem;
+	text-align: left;
+	padding:0 20px;
+}
+
+._proDetailInfoSec > .sectionInfo > .content{
+	background-color: #fff;
+	padding:20px ;
+}
+._proDetailInfoSec > .sectionInfo > .content img{
+	width:100%;
+	margin-bottom: 10px;
+}
+
+/*投资记录*/
+._proInverstListSec{
+	/* padding-bottom: 20px; */
+} 
+
+._proInverstListSec > .iverstTitle{
+	height: 40px;
+	line-height: 40px;
+	color:#333;
+	padding:0 20px;
+	font-size: 1.6rem;
+}
+
+._proInverstListSec > .inverstList{
+	background-color: #fff;	
+	padding:0 20px;
+}
+
+._proInverstListSec > .inverstList .item{
+	overflow: hidden;
+	padding:15px 0;
+	border-top:1px solid #eee;
+}
+
+._proInverstListSec > .inverstList li:first-child .item{
+	border-top:none;
+}
+
+._proInverstListSec > .inverstList .item > .value{
+	height: 100%;
+	float: right;
+	color:#e4393c;
+	font-size:1.6rem;
+	width:80px;
+	text-align: right;
+	margin-top: 12px;
+}
+
+._proInverstListSec > .inverstList .item > .itemInfo{
+	text-align: left;
+}
+
+._proInverstListSec > .inverstList .item > .itemInfo > p.name{
+	font-size:1.6rem;
+	color:#333;
+}
+
+._proInverstListSec > .inverstList .item > .itemInfo > p.date{
+	color:#aaa;
+	font-size: 1.4rem;
+	margin-top: 10px;
+}
+
+/*红包选择*/
+._proRedBagSec{
+
+}
+
+._proRedBagSec > .itemOverview{
+	background-color: #fff;
+	padding: 15px 20px;
+
+}
+
+._proRedBagSec > .itemOverview > .title{
+	font-size:2.0rem;
+	text-align: left;
+}
+
+._proRedBagSec > .itemOverview > .itemInfo{
+	margin-top: 20px;
+}
+
+._proRedBagSec > .itemOverview > .itemInfo > table{
+	width: 100%;
+}
+
+._proRedBagSec > .itemOverview > .itemInfo > table th{
+	color:#e4393c;
+	font-size: 2.0rem;
+	height: 30px;
+	line-height: 30px;
+}
+
+._proRedBagSec > .itemOverview > .itemInfo > table td{
+	color:#aaa;
+	font-size: 1.6rem;
+	height: 40px;
+	line-height: 40px;
+}
+
+._proRedBagSec .icon{
+	background-image:url('../../images/proDetailRedBag_sprite.png');
+	background-size: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	width:15px;
+	height: 15px;
+	margin-right: 10px;
+}
+
+._proRedBagSec .icon.icon-red{
+	background-position: -20px 0;
+}
+
+._proRedBagSec .icon.icon-addRate{
+	background-position: -35px 0;
+}
+
+._proRedBagSec .selectPanel{
+	padding:10px 0 10px 0;
+}
+
+._proRedBagSec .selectPanel li{
+	float: left;
+	width: 33.33%;
+	margin:0 auto 10px;
+}
+
+._proRedBagSec  .checkProtocol{
+	font-size:1.6rem;
+	margin-top:30px;
+}
+
+._proRedBagSec  .checkProtocol #checkProtocol{
+	background-color:transparent;
+}
+
+._proRedBagSec  .checkProtocol #checkProtocol:after{
+	content:'';
+	border:1px solid #ccc;
+	display:inline-block;
+	width:14px;
+	height:14px;
+	vertical-align:sub;
+	border-radius:2px;
+}
+
+._proRedBagSec  .checkProtocol #checkProtocol:checked:after{
+	background:url('/views/styles/images/icon_checked.png') no-repeat 50% 50%,#fff;
+	background-size:12px 12px;
+}
+
+/*不可用*/
+._proRedBagSec .selectPanel li.actived > a{
+	border-color:#e4393c;
+}
+
+._proRedBagSec .selectPanel li.actived .iconTitle{
+	background-color: #e4393c;
+}
+
+._proRedBagSec .selectPanel li.actived .value{
+	color:#e4393c;
+}
+
+._proRedBagSec .selectPanel li > a{
+	width:80%;
+	border:1px solid #aaa;
+	display: block;
+	margin:0 auto;
+	border-radius: 5px;
+	height: 40px;
+	overflow: hidden;
+}
+
+._proRedBagSec .selectPanel li > a > .iconTitle{
+	width: 35px;
+	float: left;
+	height: 100%;
+	background-color: #aaa;
+	line-height: 40px;
+}
+
+._proRedBagSec .selectPanel li > a > .iconTitle .icon-quan{
+	display: inline-block;
+	width:25px;
+	height: 25px;
+	border-radius: 50%;
+	border:1px solid #fff;
+	vertical-align: middle;
+	line-height: 25px;
+	color:#fff;
+	font-size:1.4rem;
+}
+
+._proRedBagSec .selectPanel li > a > .value{
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.4rem;
+	color:#aaa;
+	margin-left: 35px;
+}
+
+._proRedBagSec .resultOverview{
+	margin-top: 10px;
+}
+
+._proRedBagSec .resultOverview .item{
+	height: 30px;
+	line-height: 30px;
+	font-size: 1.6rem;
+	text-align: left;
+	padding:0 20px;
+}
+
+._proRedBagSec .btnArea{
+	margin-top:20px;
+	padding-bottom: 20px;
+}
+
+._proRedBagSec .btnArea .btn{
+	display: block;
+	background-color:#e4393c;
+	color:#fff;
+	font-size: 1.8rem;
+	height: 45px;
+	line-height: 45px;
+	width: 200px;
+	margin:0 auto;
+}
+
+/*利息计算器*/
+	._calculateSec{
+		padding-bottom:20px;
+	}
+
+	._calculateSec .btnArea{
+		margin-top: 40px;
+		margin-bottom:70px;
+	}
+
+	._calculateSec .btnArea .btn{
+		width:120px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 1.6rem;
+	}
+
+	._calculateSec .chartSec{
+		margin-top: 20px;
+		padding:0 30px;
+	}
+
+	._calculateSec .chartSec .title{
+		font-size: 1.6rem;
+		color:#aaa;
+		text-align: left;
+		height: 40px;
+		line-height: 40px;
+		border-bottom:1px dashed #aaa;
+	}
+
+	._calculateSec .chartSec .chart{
+		overflow: hidden;
+		height: 200px;
+		padding:0 20px;
+		position: relative;
+	}
+
+	._calculateSec .chartSec .chart ul{
+		overflow: hidden;
+		height: 100%;
+	}
+	._calculateSec .chartSec .chart li{
+		width: 33.333%;
+		float: left;
+		height: 100%;
+		position: relative;
+		text-align: center;
+
+	}
+
+	._calculateSec .chartSec .chart li.lr .value{
+		color:#e4393c !important;
+
+	}
+
+	._calculateSec .chartSec .chart li.lr > .progress{
+		background-color: #e4393c;
+	}
+
+	._calculateSec .chartSec .chart li.other > .progress{
+		background-color: #ddd;
+	}
+
+	._calculateSec .chartSec .chart li.bank > .progress{
+		background-color: #eee;
+	}
+
+	._calculateSec .chartSec .chart li p.value{
+		position: absolute;
+		bottom:160px;
+		font-size: 1.6rem;
+		color:#aaa;
+		width: 100%;
+		-webkit-transition:bottom 0.3s;
+		transition:bottom 0.3s;
+	}
+
+	._calculateSec .chartSec .chart li p.progress{
+		position: absolute;
+		width:40px;
+		height: 140px;
+		background-color: #eee;
+		bottom:0;
+		left:50%;
+		margin-left: -20px;
+		border-radius:5px;
+		-webkit-transition:height 0.3s;
+		transition:height 0.3s;
+	}
+
+	._calculateSec .chartSec .footer{
+		overflow: hidden;
+		margin-top: 10px;
+		border-top:1px solid #ddd;
+		padding:0 20px;
+	}
+
+	._calculateSec .chartSec .footer li{
+		width: 33.333%;
+		float: left;
+		text-align: center;
+		font-size: 1.6rem;
+		height: 50px;
+		line-height: 50px;
+		color:#999;
+	}
+	
+	
+	/*新加入的画廊插件样式表*/
+	.lrGrallery{
+           position: fixed;
+           width:100%;
+           height:100%;
+           left:0;
+           top:0;
+           overflow: hidden;
+           z-index: 99999999999;
+           display: none;
+           background-color: #000;
+       }
+       
+      .lrGrallery  .hideBtn{
+      	position:absolute;
+      	width:30px;
+      	height:30px;
+      	right:0;
+      	top:0;
+      	/* background-color:#fff; */
+      	z-index:999;
+      	background:url(/views/styles/images/lrgrallery_pic_close.png) no-repeat 0 0;
+      	background-size:cover;
+      }
+
+       .lrGrallery ul{
+           position: absolute;
+           height:100%;
+           width:99999px;
+           background-color: #000;
+       }
+
+       .lrGrallery li{
+           float: left;
+           height:100%;
+           /*width:375px;*/
+           overflow-y:scroll;
+           position: relative;
+
+       }
+
+       .lrGrallery li img{
+           width:100%;
+           display: block;
+           position: absolute;
+           left:0;
+       }
+
+       .lrGrallery li img.alignCenter{
+           top:50%;
+           -webkit-transform: translateY(-50%);
+           transform: translateY(-50%);
+       }
+
+       .lrGrallery li img.alignTop{
+           top:0;
+       }
+
+       .lrGrallery li .pageNum{
+           position: absolute;
+           width:100%;
+           bottom:10px;
+           height:40px;
+           line-height:40px;
+           color:#fff;
+           text-shadow:0 0 2px #aaa;
+           text-align: center;
+           font-size: 1.4rem;
+       }
+       
+ /*加个键盘，快捷投资使用*/
+ #quickInvestPsw{
+		position:fixed;
+		width:100%;
+		height:100%;
+		left:0;
+		top:0;
+		background-color:rgba(0,0,0,0.2);
+		overflow:hidden;
+		display:none;
+	}
+	
+	#quickInvestPsw .wrap{
+		height: 330px;
+		background-color:#fff;
+		position:absolute;
+		width:100%;
+		left:0;
+		bottom:0;
+		-webkit-transform: translateY(330px);
+		-moz-transform: translateY(330px);
+		-ms-transform: translateY(330px);
+		-o-transform: translateY(330px);
+		transform: translateY(33 0px);
+		/* bottom:-330px; */
+		-webkit-transition: transform 0.2s;
+		-moz-transition: transform 0.2s;
+		-ms-transition: transform 0.2s;
+		-o-transition: transform 0.2s;
+		transition: transform 0.2s;
+	}
+	
+	#quickInvestPsw .wrap.show{
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+	
+	#quickInvestPsw .wrap .title{
+		height:40px;
+		line-height:40px;
+		color:#6f6f6f;
+		font-size:1.8rem;
+		overflow:hidden;
+		text-align:center;
+		border-bottom:1px solid #eee;
+	}
+	
+	#quickInvestPsw .wrap .title > .close{
+		width:17px;
+		height:17px;
+		float:left;
+		margin-top: 10px;
+    	margin-left: 10px;
+		background:url('/views/styles/images/icon_pay_close.png') no-repeat 0 0;
+		background-size:cover;
+	}
+	
+	#quickInvestPsw .wrap .inputWrap{
+		margin:20px auto;
+		width:270px;
+		height:45px;
+		background:url('/views/styles/images/icon_input_bg.png') no-repeat 0 0;
+		background-size:270px  45px;
+		line-height:45px;
+		font-size:20px;
+		margin-top:20px;
+		overflow:hidden;
+		position:relative;
+	}
+	
+	#quickInvestPsw .wrap .inputWrap span{
+		width:45px;
+		height:45px;
+		float:left;
+		color:#666;
+	}
+	
+	#quickInvestPsw .wrap .inputWrap > input{
+		width:270px;
+		height:45px;
+		background-color:#eee;
+		opacity:0;
+		padding:0; 
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	
+	#quickInvestPsw .wrap  .forgetPsw{
+		display:block;
+		width:260px;
+		text-align:right;
+		margin:15px auto;
+		font-size:1.4rem;
+	}
+	
+	
+	.lrKeyboard{
+		position:absolute;
+		width:100%;
+		bottom:0;
+		
+	}
+	
+	.lrKeyboard > table{
+		width:100%;
+		/* height:300px; */
+	}
+	
+	.lrKeyboard > table td{
+		width:33.333%;
+		border:1px solid #ddd;
+		vertical-align:middle;
+		padding:0;
+	}
+	.lrKeyboard > table td.disabled{
+		background-color:#d1d5da;
+	}
+	
+	.lrKeyboard > table td > a{
+		display:block;
+		width:100%;
+		height:50px;
+		line-height:50px;
+		font-size:2.5rem;
+		color:#000;
+	}
+	
+	.lrKeyboard > table td > a.backspace{
+		background:url(/views/styles/images/icon_keyboard_backspace.png) no-repeat 50% 50%;
+		background-size:21px 15px;
+		background-color:#d1d5da;
+	}
+	
+	.lrKeyboard > table td > a:active{
+		background-color:#aaa;
+	}

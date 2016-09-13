@@ -1,0 +1,137 @@
+._activitySec{
+
+}
+
+._activitySec > .activityList{
+
+}
+
+._activitySec > .activityList a.actItem{
+	display: block;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+._activitySec > .activityList a.actItem .activityInfo{
+	padding:10px 20px;
+	overflow: hidden;
+}
+
+._activitySec > .activityList a.actItem .activityInfo > .status{
+	width:80px;
+	font-size: 1.8rem;
+	text-align: right;
+	margin-top:15px;
+}
+
+._activitySec > .activityList a.actItem .activityInfo > .status.going{
+	color:#e4393c;
+}
+
+._activitySec > .activityList a.actItem .activityInfo > .status.end{
+	color:#aaa;
+}
+
+._activitySec > .activityList a.actItem .activityInfo > .activitDetail{
+	margin-right: 90px;
+	text-align: left;
+}
+
+._activitySec > .activityList a.actItem .activityInfo > .activitDetail > p.title{
+	font-size:1.6rem;
+	color:#333;
+}
+
+._activitySec > .activityList a.actItem .activityInfo > .activitDetail > p.dateRange{
+	color:#aaa;
+	font-size:1.4rem;
+	margin-top:15px;
+}
+
+
+/*公告*/
+._noticeSec .noticeList{
+
+}
+
+._noticeSec .noticeList li{
+	margin-bottom: 10px;
+}
+
+._noticeSec .noticeList li .item{
+	display:block;
+	padding:10px 30px 5px 20px;
+	font-size:1.6rem;
+	text-align: left;
+	color:#333;
+	background-color: #fff;
+	
+	position: relative;
+}
+
+._noticeSec .noticeList li .item.hasRead > p.title{
+	color:#999;
+}
+
+._noticeSec .noticeList li .item:after{
+	display: block;
+	content:'';
+	width:8px;
+	height: 15px;
+	background: url('/images/icon_item_arrow.png') no-repeat 0% 0%, #fff;
+	position: absolute;
+	right:10px;
+	top:50%;
+	margin-top: -7px;
+	background-size: cover;
+	-webkit-transition:transform 0.5s;
+	transition:transform 0.5s;
+}
+
+._noticeSec .noticeList li .item.actived:after{
+	-webkit-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+
+._noticeSec .noticeList li .item > p.title{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height:2.0rem;
+}
+
+._noticeSec .noticeList li .item > p.date{
+	color:#ccc;
+	font-size: 1.4rem;
+	margin-top: 20px;
+}
+
+/*文章详情*/
+._activityDetailSec{
+	background-color: #fff;
+	text-align: left;
+	padding:20px;
+}
+._activityDetailSec .activityList{
+	
+}
+
+._activityDetailSec .activityList header > div.title{
+	font-size:1.8rem;
+	color:#333;
+}
+
+._activityDetailSec .activityList header > aside.date{
+	font-size:1.4rem;
+	color:#aaa;
+	margin-top: 20px;
+}
+
+._activityDetailSec article{
+	margin-top: 20px;
+}
+
+._activityDetailSec article img{
+	max-width: 100%;
+	margin:10px 0;
+}

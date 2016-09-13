@@ -22,9 +22,12 @@ $CFG = {
 	/**
 	 * 接口相关配置
 	 */
-	API_HOST:'api.lrtzi.com',//接口地址
-	API_PROTOCOL:'https',//请求协议
-	API_PORT:443,//接口端口号
+	//API_HOST:'api.lrtzi.com',//接口地址
+	//API_PROTOCOL:'https',//请求协议
+	//API_PORT:443,//接口端口号
+	API_HOST:'wap.p2pv5.com',//接口地址
+	API_PROTOCOL:'http',//请求协议
+	API_PORT:9991,//接口端口号
 	API_PATH:'/AppApi/v1.0.0/'//公用地址
 };
 module.exports = {};

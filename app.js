@@ -28,7 +28,6 @@ app.use(express.static(path.join(__dirname, 'views/static')));//静态资源路�
 
 
 var routes = require('./routes');//路由配置文件
-
 //读取路由配置
 routes.map((v,i)=>{
   v.controller(router);

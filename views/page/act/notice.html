@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/activity/activity.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_noticeSec paddingBtm">
+    <nav class="lrToggle">
+        <a href="/act/activity">活动</a>
+        <a href="/act/notice" class="actived">公告</a>
+    </nav>
+    <!-- 公用tab切换 -->
+
+    <section class="noticeList">
+        <ul id="list">
+            <% for(var i=0;i< list.length;i++){%>
+            <li>
+                <a href="/act/notice/detail/<%=list[i].id%>" class="item">
+                    <p class="title"><%=list[i].title%></p>
+                    <p class="date"><%=list[i].addTime%></p>
+                </a>
+            </li>
+            <%}%>
+        </ul>
+    </section>
+    <!-- 活动列表页面 -->
+    <div class="lrLoading">
+
+    </div>
+    <% include ../../template/navBar.html%>
+</body>
+
+</html>

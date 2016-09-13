@@ -1,0 +1,1154 @@
+._mySec{
+
+}
+
+._mySec .icon{
+	background-image: url('../../images/my_index_sprite-(1).png');
+	background-size: 38px;
+}
+
+._mySec .header.lrItemList{
+	margin-top:0px;
+}
+
+._mySec .header.lrItemList > .item > .avatar{
+	display: block;
+	float: left;	
+	width:60px;
+	height: 60px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+._mySec .header.lrItemList > .item > .userInfo{
+	margin-left:80px;
+	margin-right: 30px;
+	font-size:1.6rem;
+	text-align: left;
+
+}
+
+._mySec .header.lrItemList > .item > .userInfo > p.username{
+	color: #333;
+	margin-top: 10px;
+}
+
+._mySec .header.lrItemList > .item > .userInfo > p.proof{
+	color:#aaa;
+	margin-top: 10px;
+	font-size: 1.4rem;
+}
+
+._mySec .inverstShow{
+	border-top:1px solid #eee;
+	background-color: #fff;
+	padding:20px;
+	display: block;
+}
+
+._mySec .inverstShow > p.allValue{
+	font-size: 2.4rem;
+	color:#e4393c;
+	text-align: left;
+	overflow: hidden;
+}
+
+._mySec .inverstShow > p.allValue .eyePart{
+	display: block;
+	width:30px;
+	height: 30px;
+}
+
+._mySec .inverstShow > p.allValue .eye{
+	display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-position: 20px -294px;
+}
+
+._mySec .inverstShow > p.allValue .eye.close{
+	background-position: 0 -295px;
+}
+._mySec .inverstShow > p.formula{
+	font-size: 1.4rem;
+	text-align: left;
+	color:#aaa;
+
+	margin-top: 20px;
+}
+
+._mySec .operationPanel{
+	margin-top: 10px;
+	overflow: hidden;
+	border-top:1px solid #f8f8f8;
+}
+
+._mySec .operationPanel > a{
+	display: block;
+	height: 86px;
+	width: 50%;
+	float: left;
+	border-bottom:1px solid #f8f8f8;
+	background-color:#fff;
+	padding:15px 15px;
+}
+
+._mySec .operationPanel > a:nth-child(2n){
+	border-left:1px solid #f8f8f8;
+}
+
+._mySec .operationPanel > a .iconPanel{
+	width:35px;
+	float: left;
+}
+._mySec .operationPanel > a .iconPanel > .icon{
+	display: block;
+	width:35px;
+	height: 35px;
+	margin:5px auto;
+}
+
+._mySec .operationPanel > a .iconPanel > .icon.icon-cash{/*余额*/
+	background-position: 0 -35px;
+}
+
+._mySec .operationPanel > a .iconPanel > .icon.icon-record{/*记录*/
+	background-position: 0 0;
+}
+
+._mySec .operationPanel > a .iconPanel > .icon.icon-welfare{/*福利*/
+	background-position: 0 -70px;
+}
+
+._mySec .operationPanel > a .iconPanel > .icon.icon-calendar{/*日历*/
+	background-position: 0 -105px;
+	line-height:4.5rem;
+	color:#fff;
+	font-size:1.6rem;
+	text-align:center;
+	font-weight:bold;
+}
+._mySec .operationPanel > a .content{
+	margin-left: 45px;
+	text-align: left;
+}
+
+._mySec .operationPanel > a .content > .title{
+	color:#333;
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+}
+
+._mySec .operationPanel > a .content > p{
+	margin:7px 0;
+	color:#666;
+	font-size:1.6rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	font-size:1.2rem;
+}
+
+._mySec .operationPanel > a .content > p.cash{
+	color:#e4393c;
+	font-size: 1.6rem;
+	margin-top: 20px;
+}
+
+
+/*银行卡信息区块*/
+.myBankIcon{
+	width:40px;
+	height: 40px;
+	float: left;
+
+}
+.myBankCardInfo{
+	margin-left: 60px;
+	text-align: left;
+}
+
+.myBankCardInfo > .name{
+	font-size: 1.6rem;
+}
+
+.myBankCardInfo > .cardNo{
+	color:#aaa;
+	margin-top: 10px;
+}
+
+.myTips{
+	color:#aaa;
+	text-align: left;
+	padding:0 20px;
+	font-size: 1.6rem;
+}
+
+
+/*公用提交按钮样式*/
+.lrBtnArea{
+	position: absolute;
+	bottom:70px;
+	width: 100%;
+	padding-bottom: 70px;
+}
+
+.lrBtnArea > .btn{
+	width:160px;
+	height: 45px;
+	font-size: 1.8rem;
+	line-height: 45px;
+}
+
+
+/*总资产样式*/
+._myAssetsSec{
+
+}
+
+._myAssetsSec .chartShow{
+	padding:40px 0 15px;
+}
+
+._myAssetsSec .chartShow .chartWrap{
+	width:250px;
+	height: 250px;
+	position: relative;
+	margin:0 auto;
+}
+
+._myAssetsSec .chartShow .chartWrap > .allCountInfo{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+._myAssetsSec .chartShow .chartWrap > .allCountInfo > .value{
+	font-size:2.6rem;
+	color:#333;
+	margin-top: 100px;
+}
+
+._myAssetsSec .chartShow .chartWrap > .allCountInfo > .name{
+	margin-top: 20px;
+	font-size:1.8rem;
+}
+._myAssetsSec .assertRecord{
+	padding:10px 25px;
+	font-size:1.4rem;
+}
+
+._myAssetsSec .assertDetail{
+	padding:40px 0;
+	border-top:1px solid #ededed;
+}
+
+._myAssetsSec .assertDetail li{
+	font-size:1.6rem;
+	color:#333;
+	margin:10px 0;
+}
+
+._myAssetsSec .assertDetail li > span{
+	text-align: left;
+	display: inline-block;
+}
+
+._myAssetsSec .assertDetail li > span.icon{
+	width:40px;
+}
+
+._myAssetsSec .assertDetail li > span.title{
+	width: 80px;
+}
+
+._myAssetsSec .assertDetail li > span.value{
+	width:60px;
+}
+
+/*资金记录*/
+._myAssertRecordSec{
+	background-size: 4px 80%;
+}
+
+.borderCenter{
+	background: url('../../images/assetFixedBg.png') repeat-y 50% 20%,#f8f8f8;
+	background-attachment: fixed;
+	background-size: 4px 80%;
+}
+._myAssertRecordSec > .fakeHeader{
+	height: 60px;
+	background-color: #f8f8f8;
+	line-height: 60px;
+	font-size:1.8rem;
+	color:#e4393c;
+}
+
+/*资金列表*/
+._myAssertRecordSec .recordList{
+	padding:0 20px;
+	background: url('../../images/assetFixedBg.png') repeat-y 50% 20%,#f8f8f8;
+	background-attachment: fixed;
+	background-size: 4px 80%;
+}
+
+._myAssertRecordSec .recordList li{
+	/* overflow: hidden; */
+	margin-top: 20px;
+}
+
+._myAssertRecordSec .recordList li > div.item{
+	width: 50%;
+	float:right;
+
+}
+
+._myAssertRecordSec .recordList li > div.item > .tips{
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #eee;
+	border-radius: 4px;
+	margin-left: 24px;
+	height: 60px;
+	position: relative;
+	padding:10px 10px;
+	text-align: left;
+}
+
+._myAssertRecordSec .recordList li > div.item > .tips > .value{
+	color:#e4393c;
+}
+
+._myAssertRecordSec .recordList li > div.item > .tips > p{
+	font-size:1.6rem;
+	line-height: 2.0rem;
+}
+._myAssertRecordSec .recordList li .item > .date{
+	color:#aaa;
+	font-size: 1.6rem;
+	margin-top:10px;
+	text-align: left;
+	padding-left: 24px;
+}
+
+._myAssertRecordSec .recordList li .item > .date > .icon-clock{
+	display: inline-block;
+	width:13px;
+	height: 13px;
+	background: url('../../images/assertRecord_sprite.png') no-repeat 0 -13px;
+	background-size: 13px;
+	margin-right: 2px;
+}
+
+._myAssertRecordSec .recordList li > div.item > .tips > span.icon-dotted{
+	position: absolute;
+	width:24px;
+	height:24px;
+	background-color: #dbdbdb;
+	border-radius:50%;
+	left:-36px;
+	top:10px;
+	border: 5px solid #f8f8f8;
+	
+}
+
+._myAssertRecordSec .recordList li > div.item > .tips > span.icon-arrow{
+	position: absolute;
+	width:10px;
+	height:10px;
+	background-color: #fff;
+	left:-5px;
+	top:17px;
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+	/* box-shadow: 0 -2px 2px #eee; */
+	/* z-index:-1; */
+}
+
+/*出去的金额*/
+._myAssertRecordSec .recordList li.in .item{
+	float: left;
+
+}
+
+._myAssertRecordSec .recordList li.in .item > .tips{
+	margin-left:0;
+	margin-right: 24px;
+	box-shadow: -2px -2px 5px #eee;
+	text-align: right;
+}
+
+._myAssertRecordSec .recordList li.in .item > .date{
+	text-align: right;
+	padding-left: 0;
+	padding-right: 24px;
+}
+
+._myAssertRecordSec .recordList li.in .item > .tips .icon-dotted{
+	right:-36px !important;
+	left:auto;
+}
+
+._myAssertRecordSec .recordList li.in .item > .tips .icon-arrow{
+	right:-5px !important;
+	left:auto;
+}
+
+
+/*当前*/
+._myAssertRecordSec .recordList li.current .item{
+
+}
+
+
+
+._myAssertRecordSec .recordList li.current .item > .tips{
+	background-color: #e4393c;
+	color:#fff;
+}
+
+._myAssertRecordSec .recordList li.current .item > .tips > .icon-arrow,
+._myAssertRecordSec .recordList li.current .item > .tips > .icon-dotted{
+	background-color: #e4393c;	
+}
+
+._myAssertRecordSec .recordList li.current > div.item > .tips > .value{
+	color:#fff;
+}
+
+._myAssertRecordSec .recordList li.current .item > .date{
+	color:#e4393c;
+}
+
+._myAssertRecordSec .recordList li.current .item > .date > .icon-clock{
+	background-position: 0 0 ;
+}
+
+/*我的收益*/
+._myInverstSec > .profileOverview{
+	padding:15px 0;
+	background-color: #Fff;
+}
+
+._myInverstSec > .profileOverview > .chart{
+	width:180px;
+	height: 162px;
+	background: url(../../images/my_inverstchart_bg.png) no-repeat 0 0;
+	background-size:cover;
+	margin:0 auto;
+	padding:1px;
+	color:#333;
+}	
+
+._myInverstSec > .profileOverview > .chart > p.value{
+	font-size: 1.8rem;
+	margin-top: 60px;
+	font-weight: bold;
+}
+
+._myInverstSec > .profileOverview > .chart > p.title{
+	margin-top: 20px;
+	font-size: 1.4rem;
+}
+
+._myInverstSec .icon{
+	display: inline-block;
+	width:15px;
+	height: 15px;
+	background-image:url(../../images/myInverst_sprite.png);
+	background-size:45px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+._myInverstSec .icon.icon-profile{/*今日收益*/
+	background-position:  0 0;
+}
+
+._myInverstSec .icon.icon-allAmount{/*投资总额*/
+	background-position:  -15px 0;
+}
+
+._myInverstSec .icon.icon-record{/*投资记录*/
+	background-position:  -30px 0;
+}
+
+/*汇款记录和投资记录样式*/
+._myTradeRecordSec{
+
+}
+
+._myTradeRecordSec .myRecordList{
+	margin-top: 10px;
+}
+
+._myTradeRecordSec  li.item a{
+	display: block;
+	background-color: #fff;
+	padding:15px 20px;
+	margin-bottom: 10px;
+}
+
+/*几种状态*/
+._myTradeRecordSec  li.item.state1 .state{
+	border-color:#e4393c !important;
+	color:#e4393c !important;
+}
+
+._myTradeRecordSec  li.item.state2 .state{
+	border-color:#aaa !important;
+	color:#aaa !important;
+}
+
+._myTradeRecordSec  li.item a .title{
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: left;
+	color:#333;
+	background: url('../../images/icon_item_arrow.png') no-repeat 98% 50%, #fff;
+ 	background-size:8px 15px;
+}
+
+._myTradeRecordSec  li.item a  .content{
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+._myTradeRecordSec  li.item a  .content .state{
+	float: right;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border:1px solid #e4393c;
+	line-height: 60px;
+	color:#e4393c;
+	font-size: 1.6rem;
+
+}
+
+._myTradeRecordSec  li.item a  .content .itemInfo{
+	margin-right: 70px;
+	height: 50px;
+}
+
+._myTradeRecordSec  li.item a  .content .itemInfo table{
+	width:100%;
+	color:#aaa;
+	text-align: left;
+}
+._myTradeRecordSec  li.item a  .content .itemInfo table th{
+	font-size: 1.4rem;
+	line-height: 20px;
+	height: 20px;
+}
+
+._myTradeRecordSec  li.item a  .content .itemInfo table td{
+	font-size:1.8rem;
+	height: 60px;
+	line-height: 60px;
+}
+
+._myTradeRecordSec  li.item a  .content .itemInfo table td.main_red{
+	font-size: 2.0rem;
+}
+
+._myTradeRecordSec  li.item a aside.date{
+	text-align: right;
+	color:#aaa;
+	font-size: 1.4rem;
+	margin-top: 15px;
+}
+
+/*回款日历*/
+._myCalendarSec{
+
+}
+
+.repay_plan .tips{
+	margin:20px 0;
+	text-align:left;
+	overflow:hidden;
+}
+       				
+.repay_plan .tips li{
+	float:left;
+	font-size:16px;
+	margin-right:40px;
+}
+       				
+.repay_plan .tips li > span{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	border-radius:50%;
+	vertical-align:text-bottom;
+	margin-right:10px;
+}
+       				
+       				.repay_plan .tips li > span._payNotFinish{
+       					background-color:#f76868;
+						color:#fff;
+       				}
+       				
+       				.repay_plan .tips li > span._payFinish{
+       					background-color:#eee;
+						color:#fff;
+       				}
+       				
+       				.repay_plan .tips li > span.current_day{
+       					color:#f76868;
+						border: 2px solid #f76868;
+       				}
+       				
+._myCalendarSec .repatTips{
+	/* border:1px solid #aaa; */
+	overflow:hidden;
+	height:6.0rem;
+	line-height:6.0rem;
+	padding:0 10px;
+	font-size:1.4rem;
+}
+
+._myCalendarSec .repatTips .item{
+	display:inline-block;
+	vertical-align:middle;
+	color:#e4393c;
+	margin-right:5px;
+}
+
+._myCalendarSec .repatTips .f_right{
+	color:#e4393c;
+}
+
+/*引导tips*/
+._myCalendarSec .guideMask{
+	position:fixed;
+	z-index:9999;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background:url(/views/styles/images/guide_mask_bg.png) repeat 0 0;
+	display:none;
+}
+
+._myCalendarSec .guideMask > .guideIcon{
+	position:absolute;
+	width:80%;
+	left:10%;
+	top:55%;
+}
+
+._myCalendarSec .guideMask > .getIt{
+	background-color:transparent;
+	width:100px;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	font-size:1.8rem;
+	bordeR:1px solid #fff;
+	border-radius:5px;
+	position:absolute;
+	left:50%;
+	top:80%;
+	margin-left:-50px;
+	background-color:rgba(255,2552,255,0.1)
+}
+
+._myCalendarSec .guideMask >  .title{
+	position:absolute;
+	width:100%;
+	top:50%;
+	font-size:2.0rem;
+	color:#fff;
+}
+
+._myCalendarSec .payBackInfo{
+	background-color: #e4393c;
+	padding:30px 20px 20px 20px;
+	color:#fff;
+}
+
+._myCalendarSec .payBackInfo a{
+	color:#fff;
+}
+
+._myCalendarSec .payBackInfo .payBackDetail{
+	float: right;
+	width:60%;
+}
+
+._myCalendarSec .payBackInfo .payBackDetail .item{
+	margin-bottom: 20px;
+	font-size: 1.4rem;
+}
+
+._myCalendarSec .payBackInfo .payBackDetail .item .title{
+	font-size: 1.6rem;
+	text-align: left;
+}
+
+/* ._myCalendarSec > .payBackInfo .payBackDetail .item .content{
+	padding:0 20px;
+} */
+
+._myCalendarSec .payBackInfo .payBackDetail .item table{
+	width: 100%;
+	margin-top: 10px;
+}
+
+._myCalendarSec .payBackInfo .payBackDetail .item table th,
+._myCalendarSec .payBackInfo .payBackDetail .item table td{
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	padding:0 10px;
+}
+
+._myCalendarSec .payBackInfo .dateInfo{
+	margin-right: 60%;
+	padding-top: 1px;
+}
+
+._myCalendarSec .payBackInfo .dateInfo .changeYear{
+	font-size:3.0rem !important;
+}
+
+._myCalendarSec .payBackInfo .dateInfo .year{
+	font-size:2.0rem;
+	margin-top: 10px;
+}
+
+._myCalendarSec .payBackInfo .dateInfo .date{
+	font-size:7.0rem;
+	margin-top: 10px;
+}
+
+._myCalendarSec .payBackInfo .dateInfo .month{
+	font-size:2.0rem;
+	margin-top:10px;
+}
+
+
+._myCalendarSec .payBackInfo aside.tips{
+	font-size: 1.6rem;
+}
+
+._myCalendarSec .icon-dotted{
+	font-size: 1.6rem;
+	text-shadow:0 0 1px 1px #fff;
+}
+
+._myCalendarSec .calendar{
+	padding:0 20px 30px 20px;
+}
+
+._myCalendarSec .calendar table{
+	width: 100%;
+	font-size: 1.8rem;
+}
+
+._myCalendarSec .calendar table a{
+	color:#666;
+	display: inline-block;
+	width:28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 50%;
+	position:relative;
+	
+}
+
+._myCalendarSec .calendar table th
+{
+	font-size: 1.6rem;
+	color:#666;
+	height: 50px;
+	line-height: 50px;
+}
+
+._myCalendarSec .calendar table tr{
+	border-bottom:1px solid #eee;
+}
+
+._myCalendarSec .calendar table td{
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.8rem;
+}
+
+._myCalendarSec .calendar table td a._current{
+	border:1px solid #e4393c;
+}
+._myCalendarSec .calendar table td a._notFinish:after{
+	display:block;
+	color:#e4393c;
+}
+
+._myCalendarSec .calendar table td a:after{
+	content: '●';
+    position: absolute;
+    right: -3px;
+    top: -10px;
+    display: none;
+    width: 8px;
+    height: 8px;
+}
+
+._myCalendarSec .calendar table td a._finished:after{
+	display:block;
+	color:#aaa;
+}
+
+._myCalendarSec .calendar table td a._plan{
+	display: inline-block;
+	width:30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	border:1px solid #e4393c;
+}
+
+._myCalendarSec .calendar table td a._other{
+	color:#aaa;
+}
+
+/*红包*/
+.welfareList{
+	padding-top: 0;
+	margin-top: 10px;
+}
+
+.welfareList .item{
+	position: relative;
+	margin:0 20px 10px 20px;
+}
+
+.welfareList .item.disabled .content{
+	color:#999 !important;
+}
+
+.welfareList .item .title{
+	height: 33.33%;
+	width: 100%;
+	padding:0 20px;
+	position: absolute;
+	top:0;
+	left:0;
+	color:#fff;
+}
+
+.welfareList .item .title > .name{
+	position: absolute;
+	left:30px;
+	top:60%;
+	font-size: 1.8rem;
+	margin-top: -.9rem;
+
+}
+
+.welfareList .item .title > .value{
+	position: absolute;
+	right:30px;
+	top:60%;
+	font-size: 1.6rem;
+	margin-top: -.8rem;
+	text-align: right;
+
+}
+
+.welfareList .item .content{
+	height: 65.7%;
+	width: 100%;
+	position: absolute;
+	left:0;
+	bottom:0;
+}
+
+.welfareList .item .content .explain{
+	position: absolute;
+	left:15px;
+	top:5px;
+	font-size: 1.2rem;
+	text-align: left;
+	width:45%;
+	line-height: 1.8rem;
+}
+
+.welfareList .item .content .date{
+	position: absolute;
+	left:15px;
+	bottom:10px;
+	font-size: 1.2rem;
+	text-align: left;
+}
+
+.welfareList .item .content .value{
+	position: absolute;
+	text-align: left;
+	width: 27%;
+	right: 0;
+	top:30px;
+	font-size: 3.0rem;
+}
+
+/*投资之类的列表*/
+._myRecordRechargeCashSec{
+
+}
+
+._myRecordRechargeCashSec > .recordList{
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+._myRecordRechargeCashSec > .recordList  li.record:first-child{
+	border-top:none;
+}
+
+._myRecordRechargeCashSec > .recordList  li.record{
+	padding:10px 0;
+	border-top:1px solid #eee;
+	font-size: 1.6rem;
+	margin:0 20px;
+}
+
+._myRecordRechargeCashSec > .recordList  li.record > p{
+	line-height: 2.8rem;
+	overflow: hidden;
+}
+
+._myRecordRechargeCashSec > .recordList  li.record .type{
+	color:#333;
+}
+
+._myRecordRechargeCashSec > .recordList  li.record .date{
+	color:#aaa;
+	font-size: 1.4rem;
+}
+
+._myRecordRechargeCashSec > .recordList  li.record.success .value,
+._myRecordRechargeCashSec > .recordList  li.record.success .status{
+	color:#e4393c;
+}
+
+._myRecordRechargeCashSec > .recordList  li.record.going .value,
+._myRecordRechargeCashSec > .recordList  li.record.going .status,
+._myRecordRechargeCashSec > .recordList  li.record.fail .value,
+._myRecordRechargeCashSec > .recordList  li.record.fail .status
+{
+	color:#aaa;
+}
+
+
+/*银行卡列表*/
+._mySettingBindCardSec{
+	padding:10px 20px;
+	
+}
+
+._mySettingBindCardSec  .item{
+	display: block;
+	height: 140px;
+	background-color: #3ccfb1;
+	border-radius: 10px;
+	padding:20px 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+._mySettingBindCardSec  .item .mask{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index:999;
+	line-height: 140px;
+	font-size: 1.8rem;
+	text-align: center;
+	color:#fff;
+}
+
+._mySettingBindCardSec  .item .mask > .icon_process{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	background:url(/views/styles/images/icon_bind_loading.png) no-repeat 0 0 ;
+	background-size:20px;
+	vertical-align:text-bottom;
+	margin-right:10px;
+}
+
+._mySettingBindCardSec  .item .leftIcon{
+	float: left;
+	width:60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #fff;
+	padding:5px;
+
+}
+._mySettingBindCardSec  .item	.leftIcon img{
+	width: 100%;
+}
+
+._mySettingBindCardSec  .item	.rightInfo{
+	margin-left: 80px;
+	text-align: left;
+	color:#fff;
+	font-size: 1.6rem;
+}
+
+._mySettingBindCardSec  .item	.rightInfo > p.bankName{
+	font-size:1.6rem;
+}
+
+._mySettingBindCardSec  .item	.rightInfo > p.cardType{
+	font-size:1.4rem;
+	margin-top: 10px;
+}
+
+._mySettingBindCardSec  .item	.rightInfo > p.cardNo{
+	font-size:1.6rem;
+	margin-top: 20px;
+	line-height: 2.0rem;
+}
+
+._mySettingBindCardSec  .item.notBind{
+	background: url(/views/styles/images/icon_addCard.png) no-repeat 50% 30%,#fff;
+	color:#e4393c;
+	font-size: 1.8rem;
+	position: relative;
+	background-size: 40px 40px;
+}
+
+._mySettingBindCardSec .item > p.tips{
+	position: absolute;
+	left:50%;
+	bottom:20px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+._mySettingBindCardSec ._tips{
+	margin-top: 15px;
+	font-size: 1.4rem;
+	color:#aaa;
+	text-align: left;
+}
+
+/*新加入的快捷支付的一个页面的样式*/
+._myQuickForgetPswSec  .formList{
+			
+}
+
+._myQuickForgetPswSec  .formList > .formItem{
+	background-color:#fff;
+	padding:10px 20px;
+	margin-top:10px;
+	overflow:hidden;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p{
+	line-height:3.0rem;
+	height:3.0rem;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p.label{
+	float:left;
+	width:30px;
+	text-aign:center;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p.textField{
+	margin-left:40px;
+	text-align:left;
+	overflow:hidden;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p.textField > input{
+	/* background-color:#eee; */
+	width:90%;
+	float:left;
+	height:3.0rem;
+	line-height:3.0rem;
+	padding:0;
+	font-size:1.4rem;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p.label > span.icon{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	background-image:url(/views/styles/images/new_register_sprite.png);
+	background-size:20px;
+	vertical-align:middle;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p.label > span.icon.icon-mobile{
+	background-position:0 -40px;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p.label > span.icon.icon-vcode{
+	background-position:0 -60px;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p.label > span.icon.icon-psw{
+	background-position:0 0;
+}
+
+._myQuickForgetPswSec  .formList > .formItem > p.label > span.icon.icon-invite{
+	background-position:0 -20px;
+}
+
+._myQuickForgetPswSec  .formList > .formItem.sendVcode > .textField{
+	margin-right:100px;
+}
+
+._myQuickForgetPswSec  .formList > .formItem.sendVcode > .other{
+	width:90px;
+	float:right;
+}
+
+._myQuickForgetPswSec  .formList > .formItem .imgVCode{
+	    border: 1px solid #eee;
+	    display: inline-block;
+	    width: 90px;
+	    height: 36px;
+	}
+	
+._myQuickForgetPswSec  .formList > .formItem 	.imgVCode > img{
+		width:100%;
+		height:100%;
+	}
+
+._myQuickForgetPswSec  .formList > .formItem.sendVcode > .other >.btn{
+	display:inline-block;
+	width:90px;
+	height:3.0rem;
+	line-height:3.0rem;
+	background-color:#fff;
+	color:#e4393c;
+	border:1px solid #e4393c;
+	font-size:1.4rem;
+}
+
+._myQuickForgetPswSec  .formList > .formItem.sendVcode > .other >.btn.disabled{
+	background-color:#fff !important;
+}
+
+._myQuickForgetPswSec .btnArea{
+	    position: absolute;
+	    bottom: 0;
+	    width: 100%;
+	    padding-bottom: 70px;
+}
+
+._myQuickForgetPswSec .btnArea .btn{
+	width: 160px;
+    height: 45px;
+    font-size: 1.8rem;
+    line-height: 45px;
+}
