@@ -15,7 +15,7 @@
 }
 
 ._loginSec .bg{
-	background-image: url(../../images/h5login_sprite.png);
+	background-image: url(/images/h5login_sprite.png);
 	background-size: 205px;
 }
 ._loginSec > .loginBanner{
@@ -161,6 +161,6 @@
 }
 
 ._loginSec  #notRegisterTips #checkProtocol:checked:after{
-	background:url('/views/styles/images/icon_checked.png') no-repeat 50% 50%,#fff;
+	background:url('/images/icon_checked.png') no-repeat 50% 50%,#fff;
 	background-size:12px 12px;
 }

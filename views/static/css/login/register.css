@@ -41,7 +41,7 @@
 	width:20px;
 	height:20px;
 	display:inline-block;
-	background-image:url(/views/styles/images/new_register_sprite.png);
+	background-image:url(/images/new_register_sprite.png);
 	background-size:20px;
 	vertical-align:middle;
 }

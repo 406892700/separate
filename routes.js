@@ -10,5 +10,6 @@ module.exports = [
 	{route:'/',controller:require(path+'index')},
 	{route:'/invest',controller:require(path+'invest')},
 	{route:'/my',controller:require(path+'my')},
-	{route:'/act',controller:require(path+'activity')}
+	{route:'/act',controller:require(path+'activity')},
+	{route:'/user',controller:require(path+'user')}
 ];

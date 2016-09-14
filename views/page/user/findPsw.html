@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/login/register.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+  </head>
+  <body class="_registerSec">
+	  <div id="_wrap">
+		  <div id="step1">
+			  <section class="formList">
+				  <div class="formItem">
+					  <p class="label"><span class="icon icon-mobile"></span></p>
+					  <p class="textField">
+						  <input type="number"  name="mobile" placeholder="请输入您的手机号" pattern="[0-9]*">
+					  </p>
+				  </div>
+
+				  <div class="formItem sendVcode">
+					  <p class="label"><span class="icon icon-vcode"></span></p>
+					  <p class="other"><a class="imgVCode" href="javascript:void(0)" id="imgVCode"><img src="" alt="" /></a></p>
+					  <p class="textField">
+						  <input type="text"  name="imgVCodeInput" placeholder="图形验证码" maxLength="4">
+					  </p>
+				  </div>
+
+				  <div class="formItem sendVcode">
+					  <p class="label"><span class="icon icon-vcode"></span></p>
+					  <p class="other"><a class="btn" href="javascript:void(0)" id="vCode">获取验证码</a></p>
+					  <p class="textField">
+						  <input type="number"  name="vCode" placeholder="请输入验证码" pattern="[0-9]*">
+					  </p>
+				  </div>
+
+				  <div class="formItem">
+					  <p class="label"><span class="icon icon-psw"></span></p>
+					  <p class="textField">
+						  <input type="password"  name="password" placeholder="密码8-20个字符，区分大小写">
+					  </p>
+				  </div>
+			  </section>
+			  <footer class="btnArea">
+				  <a href="javascript:void(0)" class="btn btnSubmit" id="btnSubmit">确定</a>
+			  </footer>
+		  </div>
+	  </div>
+
+  </body>
+</html>

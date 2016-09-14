@@ -10,7 +10,22 @@ module.exports = function(router) {
             url: 'getProjectList',
             data: req.params
         }, function (err, data) {
-            res.render('page/investDetail', {list: data.result.list, tab: 'inverst'});
+            res.render('invest/list', {list: data.result.list, tab: 'inverst'});
+        });
+    });
+
+    router.get('/export',(req,res,next)=>{
+        var fs = require('fs');
+        fs.readFile('e://LIST.TXT',function(err,data){
+            console.log(data.toString());
+            var str = data.toString();
+            var arr = str.split('\n');
+            arr.map(function(v,i){
+                arr[i] = arr[i].trim();
+            });
+
+
+            res.json({a:arr});
         });
     });
 };

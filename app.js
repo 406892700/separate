@@ -14,7 +14,7 @@ require('./config');//全局配置对象
 
 // view engine setup
 //模板引擎ejs
-app.set('views', path.join(__dirname, 'views'));//页面文件路径
+app.set('views', path.join(__dirname, 'views/page'));//页面文件路径
 app.engine('.html', ejs.__express);
 app.set('view engine', 'html');
 

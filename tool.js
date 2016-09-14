@@ -10,10 +10,19 @@
 
     gen_obj.next();//先执行一次到达第一个异步操作的位置
 };
+
+const getRedisClient = ()=>{//获取redisClient
+    var  redis = require('redis');
+    return redis.createClient({
+        host:$CFG.REDIS_HOST,
+        port:$CFG.REDIS_PORT
+    });
+};
 /*
 const extends = Object.assign;*/
 
 module.exports = {
 	sync:generator,
-	extends:Object.assign
+	extends:Object.assign,
+    getRedisClient:getRedisClient
 };
