@@ -444,7 +444,7 @@ section.lrProDetail .tips{
 	content:'';
 	width:8px;
 	height: 15px;
-	background: url('images/icon_item_arrow.png') no-repeat 0% 0%, #fff;
+	background: url('/images/icon_item_arrow.png') no-repeat 0% 0%, #fff;
 	position: absolute;
 	right:10px;
 	top:50%;

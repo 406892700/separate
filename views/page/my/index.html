@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_mySec paddingBtm">
+
+    <div id="userInfo">
+        <section class="lrItemList header">
+            <a class="item arrow" href="/views/static/my/myMenu.html">
+				<span class="avatar">
+					<% if(userObj.avatar == null){%>
+						<img src="/views/styles/images/icon_public_iagram.png" alt="头像" width="100%" height="100%">
+					<%}else{%>
+						<img src="<%=userObj.avatar%>" alt="头像" width="100%" height="100%">
+					<%}%>
+				</span>
+                <div class="userInfo">
+                    <p class="username"><% if(userObj.isRealNameState == 1){%><%=userObj.realName%><%}else{%><%=userObj.mobile%><%}%></p>
+                    <p class="proof"><% if(userObj.isRealNameState*1 === 0){%><span class="main_red">未实名认证</span><%}else{%>已实名认证<%}%></p>
+                </div>
+            </a>
+        </section>
+        <!-- 用户个人信息 -->
+    </div>
+
+    <div id="userAccountInfo">
+        <a class="inverstShow" data-href="/views/static/my/myAssets.html">
+            <p class="allValue">
+                <span class="value" data-value="<%=accountObj.total%>"><%=accountObj.total%></span>
+
+                <label class="eyePart f_right">
+                    <span href="javascript:void(0)" class="eye icon"></span>
+                </label>
+            </p>
+
+            <p class="formula">
+                账户资产=账户余额+待收本金+待收利益+冻结资金
+            </p>
+        </a>
+        <!-- 用户资产信息 -->
+
+        <section class="operationPanel">
+            <a href="/views/static/my/mySettingRestCash.html">
+                <div class="iconPanel">
+                    <span class="icon icon-cash"></span>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        账户余额
+                    </div>
+                    <p class="cash"><%=accountObj.usable%>元</p>
+                </div>
+            </a>
+            <!-- 账户余额 -->
+            <a href="/views/static/my/myInverst.html">
+                <div class="iconPanel">
+                    <span class="icon icon-record"></span>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        投资记录
+                    </div>
+                    <p>账目清晰</p>
+                    <p>有效查看资金动向</p>
+                </div>
+            </a>
+            <!-- 投资记录 -->
+            <a href="/views/static/my/myWelfare.html">
+                <div class="iconPanel">
+                    <span class="icon icon-welfare"></span>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        我的福利
+                    </div>
+                    <p>参加活动</p>
+                    <p>获得更多奖励</p>
+                </div>
+            </a>
+            <!-- 我的福利 -->
+            <a href="/views/static/my/myPayBackCalendar.html">
+                <div class="iconPanel">
+                    <span class="icon icon-calendar"><%=new Date().getDate()%></span>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        回款日历
+                    </div>
+                    <p>回款提醒 </p>
+                    <p>合理分配理财金</p>
+                </div>
+            </a>
+            <!-- 回款日历 -->
+        </section>
+        <!-- 操作面板 -->
+    </div>
+
+
+    <% include ../../template/navBar.html%>
+</body>
+
+</html>
