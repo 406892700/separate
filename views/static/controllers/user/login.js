@@ -6,6 +6,14 @@ define(['zepto'],function($){
         $psw = $('[name="password"]'),
         $btn = $('#submitBtn');
 
+    var getQueryField = function(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null)
+            return unescape(r[2]);
+        return null;
+    };
+
     $btn.bind('click',function(){
         if($username.val() == ''){
             alert('用户名不能为空');
@@ -26,7 +34,14 @@ define(['zepto'],function($){
                 OS:'HTML'
             },
             success:function(){
-                alert('登录成功！');
+                //alert('登录成功！');
+                var oldUrl = getQueryField('urlTo');
+                if(oldUrl){
+                    window.location.href=decodeURIComponent(oldUrl);
+                }else{
+                    window.location.href="/my/index";
+                }
+
             }
         })
 

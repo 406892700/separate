@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的资金记录</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_myAssertRecordSec  paddingBtm">
+<div class="fakeHeader">
+    我的资金记录
+</div>
+<div class="recordList">
+    <ol id="list">
+        <% for(var i = 0;i < list.length;i++){%>
+        <li class="<%if(list[i].plus_minus == '1'){%>in<%}else{%>out<%}%> <%if(list[i].ifLastest == 1){%>current<%}%> clearfix">
+            <div class="item">
+                <div class="tips">
+                    <span class="icon-dotted"></span>
+                    <span class="icon-arrow"></span>
+                    <p class="title"><%=list[i].type%></p>
+                    <p class="value"><span class="font_mini">￥</span><%if(list[i].plus_minus == '1'){%>+<%}else{%>-<%}%><%=list[i].amount%></p>
+                </div>
+                <p class="date">
+                    <span class="icon-clock"></span>
+                    <%=list[i].addTime%>
+                </p>
+            </div>
+        </li>
+        <%}%>
+
+    </ol>
+</div>
+<div class="lrLoading">
+    加载中...
+</div>
+<% include ../../template/navBar.html%>
+</body>
+</html>

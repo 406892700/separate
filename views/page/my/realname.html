@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实名认证</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+
+    <style>
+        ._mySettingReadNameSec > .tips{
+            padding:20px 45px;
+            color:#e4393c;
+            font-size: 1.4rem;
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="_mySettingReadNameSec paddingBtm" style="height: 100%; box-sizing: content-box; ">
+    <section class="lrFormList">
+        <div class="formItem separate">
+            <p class="label">姓&nbsp;&nbsp;&nbsp;名</p>
+            <p class="textField"><input type="text" placeholder="请输入您的真实姓名" name="realName"></p>
+        </div>
+        <div class="formItem">
+            <p class="label">身份证</p>
+            <p class="textField"><input type="text" placeholder="请输入您的身份证号" name="identifyCard"></p>
+        </div>
+    </section>
+
+    <aside class="tips">
+        注意：实名认证后身份信息不可更改
+    </aside>
+
+    <footer class="lrBtnArea">
+        <a href="javascript:void(0)" class="btn btnSubmit" id="btnSubmit">确认</a>
+    </footer>
+    <% include ../../template/navBar.html%>
+</body>
+</html>

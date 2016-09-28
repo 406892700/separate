@@ -12,10 +12,10 @@
 
     <div id="userInfo">
         <section class="lrItemList header">
-            <a class="item arrow" href="/views/static/my/myMenu.html">
+            <a class="item arrow" href="/my/menu">
 				<span class="avatar">
 					<% if(userObj.avatar == null){%>
-						<img src="/views/styles/images/icon_public_iagram.png" alt="头像" width="100%" height="100%">
+						<img src="/images/icon_public_iagram.png" alt="头像" width="100%" height="100%">
 					<%}else{%>
 						<img src="<%=userObj.avatar%>" alt="头像" width="100%" height="100%">
 					<%}%>
@@ -30,7 +30,7 @@
     </div>
 
     <div id="userAccountInfo">
-        <a class="inverstShow" data-href="/views/static/my/myAssets.html">
+        <a class="inverstShow" href="/my/asset">
             <p class="allValue">
                 <span class="value" data-value="<%=accountObj.total%>"><%=accountObj.total%></span>
 
@@ -46,7 +46,7 @@
         <!-- 用户资产信息 -->
 
         <section class="operationPanel">
-            <a href="/views/static/my/mySettingRestCash.html">
+            <a href="/my/cash">
                 <div class="iconPanel">
                     <span class="icon icon-cash"></span>
                 </div>
@@ -58,7 +58,7 @@
                 </div>
             </a>
             <!-- 账户余额 -->
-            <a href="/views/static/my/myInverst.html">
+            <a href="/my/invest">
                 <div class="iconPanel">
                     <span class="icon icon-record"></span>
                 </div>
@@ -71,7 +71,7 @@
                 </div>
             </a>
             <!-- 投资记录 -->
-            <a href="/views/static/my/myWelfare.html">
+            <a href="/my/welfare">
                 <div class="iconPanel">
                     <span class="icon icon-welfare"></span>
                 </div>
@@ -84,7 +84,7 @@
                 </div>
             </a>
             <!-- 我的福利 -->
-            <a href="/views/static/my/myPayBackCalendar.html">
+            <a href="/my/calendar">
                 <div class="iconPanel">
                     <span class="icon icon-calendar"><%=new Date().getDate()%></span>
                 </div>

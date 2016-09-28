@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的邀请</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+    <style>
+        ._myinviteSec{
+            background-color:#fd732a;
+        }
+        ._myinviteSec .inviteSec{
+            position:relative;
+        }
+
+        ._myinviteSec img{
+            width:100%;
+            display:block;
+        }
+
+        ._myinviteSec .d2code{
+            position: absolute;
+            left: 30.6%;
+            top: 18.8%;
+            width: 40.5%;
+            height: 40.5%;
+            /* bordeR:1px solid #aaa; */
+            /* outline: 1px solid #fff; */
+        }
+
+        ._myinviteSec .jumpBtn{
+            position: absolute;
+            width: 58%;
+            left: 22.5%;
+            height: 13%;
+            bottom: 19%;
+        }
+
+        ._myinviteSec .shareArea{
+            position:fixed;
+            width:100%;
+            height:70px;
+            line-height:70px;
+            background-color:rgba(255,255,255,0.9);
+            left:0;
+            bottom:-70px;
+            -webkit-transition: bottom 0.5s;
+            transition: bottom 0.5s;
+        }
+
+        ._myinviteSec .shareArea.show{
+            bottom:0;
+        }
+
+        .shareArea a{
+            display:inline-block;
+            width:55px;
+            height:55px;
+            background-image:url(/images/share_sprite.png);
+            background-size:220px;
+            float:none;
+            margin:0;
+            background-repeat:repeat-x;
+            line-height:55px;
+            vertical-align:middle;
+            margin:0 5px;
+        }
+
+        ._myinviteSec .shareArea a.bds_sqq{
+            background-position:55px 0;
+        }
+
+        ._myinviteSec .shareArea a.bds_qzone{
+            background-position:110px 0;
+        }
+
+        ._myinviteSec .shareArea a.bds_weixin{
+            background-position:-55px 0;
+        }
+
+        ._myinviteSec	.guide_mask{
+            position:fixed;
+            width:100%;
+            height:100%;
+            left:0;
+            top:0;
+            background-color:rgba(0,0,0,0.6);
+            display:none;
+        }
+
+        .bd_weixin_popup .bd_weixin_popup_main{
+            padding:8px 10px !important;
+        }
+
+        ._myinviteSec > .inviteSec .inviteCode{
+            width: 44%;
+            left: 28%;
+            position: absolute;
+            top: 16%;
+            color:#8b32d5;
+            font-size: 2.6rem;
+            font-weight:bold;
+
+        }
+    </style>
+</head>
+<body class="_myinviteSec  paddingBtm">
+
+    <section class="inviteSec">
+        <img src="/images/invite_bg1.png" alt="" />
+        <div class="d2code" id="d2code">
+        </div>
+        <a href="javascript:void(0)" class="jumpBtn"></a>
+    </section>
+    <section class="inviteSec">
+        <div class="inviteCode" id="inviteCode">
+        </div>
+        <img src="/images/invite_bg2.png" alt="" />
+    </section>
+
+    <aside class="shareArea" id="shareArea">
+        <div class="bdsharebuttonbox" data-tag="share_1">
+            <a class="bds_sqq" data-cmd="sqq"></a>
+            <a class="bds_qzone" data-cmd="qzone"></a>
+            <a class="bds_weixin" data-cmd="weixin"></a>
+        </div>
+        <script>
+            window._bd_share_config = {
+                common : {
+                    bdText : '告诉您一个靠谱的投资平台，赶紧去领取新人198元红包吧！ ',
+                    bdDesc : '懒人朋友们，玩投资，找懒人，懒人投资，专注汽车抵押项目，年化收益12.8%起，新手100元起投，注册可享198元新人红包大礼，赶紧去领取吧！',
+                    bdUrl : 'https://wap.lrtzi.com/webOperation/newRegister/newRegister.html?inviteCode='+JSON.parse(localStorage.getItem('_userCache')).invitationCode,
+                    bdPic : 'https://wap.lrtzi.com/webOperation/newRegister/images/newRegister.jpg'
+                },
+                share : [{
+                    "bdSize" : 16
+                }]
+            }
+            with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://www.lrtzi.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </aside>
+
+    <div class="guide_mask" onclick="$(this).fadeOut('fast');">
+        <img src="/images/guide_mask.png" alt="" />
+    </div>
+    <% include ../../template/navBar.html%>
+</body>
+
+</html>

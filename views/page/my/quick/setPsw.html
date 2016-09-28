@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置快捷密码</title>
+    <% include ../../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../../template/meta.html%>
+    <% include ../../../template/jsRes.html%>
+    <style>
+        ._myQuickSetPswSec .tips{
+            text-align:left;
+            padding:10px 20px;
+        }
+    </style>
+</head>
+<body class="_myQuickSetPswSec   paddingBtm" style="height: 100%; box-sizing: content-box; ">
+    <section class="lrFormList">
+        <div class="formItem  " >
+            <p class="label align_left">快捷投资密码</p>
+            <p class="textField"><input type="password" placeholder="输入6位数字密码" name="password" pattern="[0-9]*" maxLength="6"></p>
+        </div>
+        <div class="formItem separate">
+            <p class="label align_left">确认密码</p>
+            <p class="textField"><input type="password" placeholder="再次输入" name="passwordRepeat" pattern="[0-9]*" maxLength="6"></p>
+        </div>
+        <div class="tips">
+            <p>点击确认开通即代表您同意 <a href="javascript:void(0)" class="main_red" id="checkProtocol">《快捷投资协议》</a></p>
+        </div>
+    </section>
+
+    <footer class="lrBtnArea">
+        <a href="javascript:void(0)" class="btn" id="btnSubmit">确认开通</a>
+    </footer>
+
+    <% include ../../../template/navBar.html%>
+</body>
+</html>

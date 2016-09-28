@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改快捷密码</title>
+    <% include ../../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../../template/meta.html%>
+    <% include ../../../template/jsRes.html%>
+</head>
+<body class="_myQuickModifyPswSec  paddingBtm" style="height: 100%; box-sizing: content-box; ">
+    <section class="lrFormList">
+        <div class="formItem  " >
+            <p class="label align_left">原快捷密码</p>
+            <p class="textField"><input type="password" placeholder="原快捷密码" name="payPassword" pattern="[0-9]*" maxLength="6"></p>
+        </div>
+        <div class="formItem  separate" >
+            <p class="label align_left">新快捷密码</p>
+            <p class="textField"><input type="password" placeholder="输入6位数字密码" name="newPayPassword" pattern="[0-9]*" maxLength="6"></p>
+        </div>
+        <div class="formItem separate">
+            <p class="label align_left">确认密码</p>
+            <p class="textField"><input type="password" placeholder="再次输入密码" name="passwordRepeat" pattern="[0-9]*" maxLength="6"></p>
+        </div>
+    </section>
+
+    <footer class="lrBtnArea">
+        <a href="javascript:void(0)" class="btn" id="btnSubmit">确认更改</a>
+    </footer>
+    <% include ../../../template/navBar.html%>
+</body>
+</html>

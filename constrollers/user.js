@@ -26,6 +26,7 @@ module.exports = function(router) {
    * user接口路由
    */
   router.post('/loginByPassword',(req,res,next)=>{
+
     request({
       url: 'loginByPassword',
       method:'POST',

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的福利</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_myWelfareSec paddingBtm">
+    <div id="header">
+        <aside class="lrToolBar">
+            <ul class="argsType">
+                <li data-arg="type">
+                    <span class="title">类别</span>
+                    <a href="javascript:void(0)" data-value="0" class="actived">红包</a>
+                    <a href="javascript:void(0)" data-value="1">加息券</a>
+                </li>
+                <!-- 筛选条件 -->
+            </ul>
+        </aside>
+        <!-- 公用筛选 -->
+    </div>
+
+
+    <section class="welfareList">
+        <ul id="list">
+            <%for(var i=0;i < list.length;i++){%>
+            <li>
+                <div class="item">
+                    <img src="<%if(list[i].state == 0){%>/images/hbq_bg.png<%}else{%>/images/hbq_bg_disabled.png<%}%>" alt="" width="100%" height="100%">
+                    <div class="title">
+                        <span class="name"><%=list[i].name%></span>
+                        <span class="value">价值</span>
+                    </div>
+                    <div class="content main_red">
+                        <p class="explain">
+                            <%=list[i].remark%>
+                        </p>
+
+                        <p class="date">
+                            有效期至：<%=list[i].expiredTime%>
+                        </p>
+                        <div class="value">
+                            <% if(list[i].type == 0){%>
+                            <span class="font_middle">￥</span><%=list[i].amount%>
+                            <%}else{%>
+                            <%=list[i].amount%><span class="font_middle">%</span>
+                            <%}%>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <%}%>
+        </ul>
+    </section>
+    <!-- 优惠列表 -->
+    <div class="lrLoading">
+        加载中...
+    </div>
+        <% include ../../template/navBar.html%>
+</body>
+</html>

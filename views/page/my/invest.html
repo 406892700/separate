@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的投资列表</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_myInverstSec paddingBtm">
+    <section class="profileOverview">
+        <div class="chart">
+            <p class="value"><%=income.sumIncome%></p>
+            <p class="title">累计收益(元)</p>
+        </div>
+    </section>
+
+    <section class="lrItemList">
+        <div class="item bigger">
+            <p class="title"><span class="icon icon-profile"></span>今日收益</p>
+            <p class="descrition"><%=income.todayIncome%>元</p>
+        </div>
+
+        <div class="item bigger">
+            <p class="title"><span class="icon icon-allAmount"></span>投资总额</p>
+            <p class="descrition"><%=income.sumInvest%>元</p>
+        </div>
+
+        <a class="item bigger arrow separate" href="/views/static/my/myInverstReord.html">
+            <p class="title"><span class="icon icon-record"></span>投资明细</p>
+        </a>
+    </section>
+    <% include ../../template/navBar.html%>
+</body>
+</html>

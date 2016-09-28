@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的资产</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_myAssetsSec paddingBtm">
+<section class="chartShow">
+    <div class="chartWrap">
+        <canvas id="assertChart" width="250" height="250"></canvas>
+        <div class="allCountInfo">
+            <p class="value"><%=accountObj.total%></p>
+            <p class="name">总资产</p>
+        </div>
+    </div>
+    <p class="assertRecord">
+        <a href="/my/asset/record" class="f_right main_red">资金记录&gt;&gt;</a>
+    </p>
+</section>
+<!-- 资产展示表 -->
+
+<section class="assertDetail">
+    <ul>
+        <li>
+            <span class="icon" style="color:#e44043">●</span>
+            <span class="title">账户余额</span>
+            <span class="value"><%=accountObj.usable%></span>
+        </li>
+        <li>
+            <span class="icon" style="color:#54d6ff">●</span>
+            <span class="title">待收本金</span>
+            <span class="value"><%=accountObj.dueinCapital%></span>
+        </li>
+        <li>
+            <span class="icon" style="color:#ff9756">●</span>
+            <span class="title">待收利益</span>
+            <span class="value"><%=accountObj.dueinInterest%></span>
+        </li>
+        <li>
+            <span class="icon" style="color:#00b872">●</span>
+            <span class="title">冻结资金</span>
+            <span class="value"><%=accountObj.frozen%></span>
+        </li>
+    </ul>
+</section>
+<!-- 资产详情 -->
+<% include ../../template/navBar.html%>
+</body>
+</html>

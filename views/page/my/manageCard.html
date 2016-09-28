@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>银行卡管理</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_mySettingAddCardSec paddingBtm" style="height:100%;">
+    <style>
+        ._mySettingAddCardSec .tips{
+            padding:10px 20px;
+            color:#aaa;
+            font-size: 1.4rem;
+            text-align: left;
+        }
+
+        ._mySettingAddCardSec .tips > p{
+            line-height:1.6rem;
+        }
+    </style>
+    <section class="lrFormList" style="margin-top: 0px;">
+        <div class="tips">
+            请绑定持卡人本人的银行卡
+        </div>
+        <div class="formItem  " >
+            <p class="label align_left">持卡人</p>
+            <p class="textField font_middle" id="realName"><%=user.realName%></p>
+        </div>
+        <div class="formItem separate">
+            <p class="label align_left">卡号</p>
+            <p class="textField"><input type="number" placeholder="银行卡号" name="cardNo" pattern="[0-9]*"></p>
+        </div>
+        <div class="tips">
+            <span class="main_red">温馨提示</span><br><br>
+            <p>1、只支持绑定一张银行卡用于取现及快捷充值</p>
+            <p>2、绑卡请确保为本人真实有效银行卡，否则将无法绑定成功</p>
+        </div>
+    </section>
+
+    <footer class="lrBtnArea">
+        <a href="javascript:void(0)" class="btn" id="btnSubmit">确认</a>
+    </footer>
+    <% include ../../template/navBar.html%>
+</body>
+</html>

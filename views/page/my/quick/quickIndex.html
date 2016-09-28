@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>快捷支付</title>
+    <% include ../../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../../template/meta.html%>
+    <% include ../../../template/jsRes.html%>
+</head>
+<body class="_mySettingSec  paddingBtm">
+    <section class="lrItemList">
+        <% if(account.quickInverst !=1){%>
+        <a class="item arrow separate" href="/account/quick/setPsw">
+            <p class="title">设置快捷密码</p>
+            <p class="descrition">未设置</p>
+        </a>
+        <%}else{%>
+        <a class="item arrow separate" href="/account/quick/modifyPsw">
+            <p class="title">修改快捷密码</p>
+            <p class="descrition"></p>
+        </a>
+
+        <a class="item arrow separate" href="/account/quick/findPsw">
+            <p class="title">找回快捷密码</p>
+            <p class="descrition"></p>
+        </a>
+
+        <%}%>
+    </section>
+    <% include ../../../template/navBar.html%>
+</body>
+</html>

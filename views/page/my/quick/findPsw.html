@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的福利</title>
+    <% include ../../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../../template/meta.html%>
+    <% include ../../../template/jsRes.html%>
+    <script id="_step2" type="text/template">
+        <section class="lrFormList">
+            <div class="formItem  " >
+                <p class="label align_left">新快捷密码</p>
+                <p class="textField"><input type="password" placeholder="输入6位数字密码" name="password" pattern="[0-9]*" maxLength="6"></p>
+            </div>
+            <div class="formItem separate">
+                <p class="label align_left">确认密码</p>
+                <p class="textField"><input type="password" placeholder="再次输入" name="passwordRepeat" pattern="[0-9]*" maxLength="6"></p>
+            </div>
+        </section>
+
+        <footer class="lrBtnArea">
+            <a href="javascript:void(0)" class="btn" id="btnSubmit">确认开通</a>
+        </footer>
+    </script>
+
+</head>
+<body class="_myQuickForgetPswSec  paddingBtm" style="height: 100%; box-sizing: content-box; " >
+    <div id="wrap">
+        <section class="formList" id="step1">
+            <div class="formItem">
+                <p class="label"><span class="icon icon-mobile"></span></p>
+                <p class="textField">
+                    <span id="phone"><%=user.mobile%></span>
+                    <input type="hidden" name="mobile"  value="15000000000">
+                </p>
+            </div>
+
+            <div class="formItem sendVcode">
+                <p class="label"><span class="icon icon-vcode"></span></p>
+                <p class="other"><a class="imgVCode" href="javascript:void(0)" id="imgVCode"><img src="https://api.lrtzi.com/AppApi/v1.0.0//authImage?v=1470903316832&amp;token=1HRLMK7W899" alt=""></a></p>
+                <p class="textField">
+                    <input type="text" name="imgVCodeInput" placeholder="图形验证码" maxlength="4">
+                </p>
+            </div>
+
+            <div class="formItem sendVcode">
+                <p class="label"><span class="icon icon-vcode"></span></p>
+                <p class="other"><a class="btn" href="javascript:void(0)" id="vCode">获取验证码</a></p>
+                <p class="textField">
+                    <input type="number" name="vCode" placeholder="手机验证码" pattern="[0-9]*">
+                </p>
+            </div>
+
+            <div class="formItem">
+                <p class="label"><span class="icon icon-psw"></span></p>
+                <p class="textField">
+                    <input type="password" name="passwordNew" placeholder="请输入新密码" pattern="[0-9]*" maxLength="6">
+                </p>
+            </div>
+
+            <div class="formItem">
+                <p class="label"><span class="icon icon-psw"></span></p>
+                <p class="textField">
+                    <input type="password" name="passwordRepeat" placeholder="请再次输入新密码" pattern="[0-9]*" maxLength="6">
+                </p>
+            </div>
+
+            <footer class="lrBtnArea">
+                <a href="javascript:void(0)" class="btn" id="btnSubmit">重置密码</a>
+            </footer>
+        </section>
+    </div>
+    <% include ../../../template/navBar.html%>
+</body>
+</html>
