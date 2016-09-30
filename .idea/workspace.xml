@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f240e1f9-56a7-4461-97fd-8b6639aebf85" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/aboutus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/accountSetting.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/asset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/assetRecord.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/bindPhone.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/calendar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/cardList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/cash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/help.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/invest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/invite.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/manageCard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/quick/findPsw.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/quick/modifyPsw.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/quick/quickIndex.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/quick/setPsw.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/realname.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/rechargeCash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/setCash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/setRecharge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/page/my/welfare.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constrollers/my.js" afterPath="$PROJECT_DIR$/constrollers/my.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constrollers/user.js" afterPath="$PROJECT_DIR$/constrollers/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/page/my/index.html" afterPath="$PROJECT_DIR$/views/page/my/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/page/user/login.html" afterPath="$PROJECT_DIR$/views/page/user/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/static/controllers/user/login.js" afterPath="$PROJECT_DIR$/views/static/controllers/user/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/static/css/my/my.css" afterPath="$PROJECT_DIR$/views/static/css/my/my.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/template/navBar.html" afterPath="$PROJECT_DIR$/views/template/navBar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/request.js" afterPath="$PROJECT_DIR$/request.js" />
     </list>
     <ignored path="separate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,55 +25,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/page/my/index.html">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/constrollers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="43" />
+            <state relative-caret-position="547">
+              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/page/my/invest.html">
+      <file leaf-file-name="my.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/constrollers/my.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="416">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invite.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/page/my/invite.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="147" column="43" selection-start-line="147" selection-start-column="43" selection-end-line="147" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manageCard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/page/my/manageCard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welfare.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="welfare.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/page/my/welfare.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="304">
+              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/request.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/constrollers/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,7 +169,6 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/views/static/css/common.css" />
-        <option value="$PROJECT_DIR$/request.js" />
         <option value="$PROJECT_DIR$/views/page/my/caldenar.html" />
         <option value="$PROJECT_DIR$/views/template/navBar.html" />
         <option value="$PROJECT_DIR$/views/page/user/login.html" />
@@ -207,7 +178,6 @@
         <option value="$PROJECT_DIR$/views/page/my/assertRecord.html" />
         <option value="$PROJECT_DIR$/views/page/my/index.html" />
         <option value="$PROJECT_DIR$/views/page/my/setRecharge.html" />
-        <option value="$PROJECT_DIR$/constrollers/my.js" />
         <option value="$PROJECT_DIR$/views/page/my/quick/findPsw.html" />
         <option value="$PROJECT_DIR$/views/page/my/quick/modifyPsw.html" />
         <option value="$PROJECT_DIR$/views/page/my/quick/quickIndex.html" />
@@ -229,6 +199,8 @@
         <option value="$PROJECT_DIR$/views/page/my/rechargeCash.html" />
         <option value="$PROJECT_DIR$/views/page/my/setCash.html" />
         <option value="$PROJECT_DIR$/views/page/my/welfare.html" />
+        <option value="$PROJECT_DIR$/request.js" />
+        <option value="$PROJECT_DIR$/constrollers/my.js" />
       </list>
     </option>
   </component>
@@ -244,9 +216,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1932" />
-    <option name="height" value="1047" />
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -290,6 +261,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="separate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="separate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="separate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,18 +382,18 @@
       <workItem from="1474161410376" duration="21209000" />
       <workItem from="1474247023276" duration="1407000" />
       <workItem from="1474263346346" duration="5150000" />
-      <workItem from="1474940019620" duration="26207000" />
+      <workItem from="1474940019620" duration="33954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81105000" />
+    <option name="totallyTimeSpent" value="88852000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1040" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973601" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25132838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -518,24 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constrollers/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/static/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="446" column="22" selection-start-line="446" selection-start-column="22" selection-end-line="446" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -638,22 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constrollers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constrollers/my.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="202" column="13" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -903,8 +858,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/page/my/welfare.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="304">
+          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constrollers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constrollers/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constrollers/my.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>

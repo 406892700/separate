@@ -6,13 +6,13 @@ module.exports = function(router) {
 
   const getCommonArgs = (req)=>{
     const user = req.session.user;
-    const data = {
+    return {
       OS:user.OS,
       apiUid:user.uid,
       accessToken:user.accessToken
     };
 
-    return data;
+    //return data;
   };
 
   //个人中心拦截器
@@ -53,9 +53,9 @@ module.exports = function(router) {
 
     req.params = Object.assign({},req.params,data);
     T.sync(function *gen(callback) {
+      console.log(user);
       const userObj = yield jRedis.hgetall(user.uid+''+user.OS+'_OBJ',callback);
       const userAccount = yield request({url: 'getAccountInfo', method:'GET', data: req.params},callback);
-
       //错误处理
       if(userObj[0] ){
         throw userObj[0];
@@ -133,8 +133,8 @@ module.exports = function(router) {
     const data = getCommonArgs(req);
 
     T.sync(function *gen(callback){
-      const account = yield request({url:'getAccountInfo', data:data},callback);
-      const count = yield request({url:'getFreeCashCount',data:data},callback);
+      const account = yield request({url:'getAccountInfo', data:data},callback,res);
+      const count = yield request({url:'getFreeCashCount',data:data},callback,res);
 
       if(account[0])
         throw account[0];
@@ -205,7 +205,7 @@ module.exports = function(router) {
       data:data
     },(err,data)=>{
       res.render('my/rechargeCash',{tab: 'my',list:data.result.list});
-    });
+    },res);
   });
 
   /**
@@ -332,7 +332,7 @@ module.exports = function(router) {
         res.render('my/quick/quickIndex',{tab:'my',account:account});
       }
 
-    });
+    },res);
     //res.render('my/quick/quickIndex',{tab:'my',user:user});
   });
 

@@ -42,7 +42,6 @@ const fetchSOAP = (obj,callback)=>{
 	  var chunk = '';
 	  
 	  res.on('data', (data) => {
-	    
 	    chunk+=data.toString();
 	  });
 
