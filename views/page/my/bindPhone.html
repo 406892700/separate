@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机绑定</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_mySettingReadNameSec paddingBtm" style="height: 100%; box-sizing: content-box; ">
+    <div id="step1">
+        <section class="lrFormList">
+            <div class="formItem separate">
+                <p class="label">当前手机号</p>
+                <p class="textField">
+                    <%=user.mobile%>
+                    <input type="hidden" value="15000000000"  name="mobile"/>
+                </p>
+            </div>
+            <div class="formItem sendVcode">
+                <p class="label">图形验证码</p>
+                <p class="other"><a class="imgVCode" href="javascript:void(0)" id="imgVCode"><img src="" alt=""></a></p>
+                <p class="textField">
+                    <input type="text" name="imgVCodeInput" placeholder="图形验证码" maxlength="4">
+                </p>
+            </div>
+            <div class="formItem transparent">
+                <p class="textField"><a class="btn" href="javascript:void(0)" id="vcode">获取验证码</a></p>
+            </div>
+            <div class="formItem">
+                <p class="label">验证码</p>
+                <p class="textField"><input type="number" placeholder="手机验证码" name="vCode" pattern="[0-9]*"></p>
+            </div>
+        </section>
+        <footer class="lrBtnArea">
+            <a href="javascript:void(0)" class="btn" id="btnSubmit">下一步</a>
+        </footer>
+    </div>
+
+    <script type="text/template" id="_bindMobile">
+        <div id="step2">
+            <section class="lrFormList">
+                <div class="formItem">
+                    <p class="label">新手机号</p>
+                    <p class="textField"><input type="number" placeholder="请输入您的手机号" name="mobile" pattern="[0-9]*"></p>
+                </div>
+                <div class="formItem sendVcode">
+                    <p class="label">图形验证码</p>
+                    <p class="other"><a class="imgVCode" href="javascript:void(0)" id="imgVCode"><img src="" alt=""></a></p>
+                    <p class="textField">
+                        <input type="text" name="imgVCodeInput" placeholder="图形验证码" maxlength="4">
+                    </p>
+                </div>
+                <div class="formItem transparent">
+                    <p class="textField"><a class="btn" href="javascript:void(0)" id="vcode">获取验证码</a></p>
+                </div>
+                <div class="formItem">
+                    <p class="label">手机验证码</p>
+                    <p class="textField"><input type="number" placeholder="手机验证码" name="vCode" pattern="[0-9]*"></p>
+                </div>
+            </section>
+
+            <footer class="lrBtnArea">
+                <a href="javascript:void(0)" class="btn" id="btnSubmit">确认</a>
+            </footer>
+        </div>
+    </script>
+
+    <div id="wrap">
+    </div>
+    <% include ../../template/navBar.html%>
+</body>
+</html>

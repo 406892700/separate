@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>银行卡管理</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_mySettingBindCardSec paddingBtm">
+    <div id="container">
+        <% if(data.length == 0){%>
+        <section class="bindCardSec">
+            <a href="/my/cash/manageCard/1" class="item notBind" >
+                <p class="tips">添加银行卡</p>
+            </a>
+        </section>
+        <!-- 绑定银行卡 -->
+        <p class="_tips">
+            只能使用一张卡进行投资及提现！
+        </p>
+        <%}else{%>
+        <%
+        var colorMapper = {
+        ABC:'#37c8ab',
+        CMBC:'#37c8ab',
+        PSBC:'#37c8ab',
+        CITIC:'#306ec7',
+        CCB:'#306ec7',
+        SPDB:'#306ec7',
+        COMM:'#306ec7',
+        BEA:'#e03d4a',
+        BJB:'#e03d4a',
+        BOC:'#e03d4a',
+        CMB:'#e03d4a',
+        GDB:'#e03d4a',
+        HXB:'#e03d4a',
+        ICBC:'#e03d4a',
+        CEB:'#ecdd20'
+        }
+        %>
+        <section class="bindCardSec">
+            <a <% if(data.state*1 != 1){%>href="javascript:void(0)"<%}else{%>href="/my/cash/manageCard/2"<%}%> class="item" style="background-color: <%=colorMapper[data.bankCode]%>">
+            <% if(data.state*1 != 1){%>
+            <div class="mask">
+                <span class="icon_process"></span>申请中...
+            </div>
+            <%}%>
+
+            <div class="leftIcon">
+                <img src="/images/bankIcon/<%=data.bankCode%>.png" alt="">
+            </div>
+            <div class="rightInfo">
+                <p class="bankName"><%=data.bankName%></p>
+                <p class="cardType">储蓄卡</p>
+                <p class="cardNo">
+                    <%=data.cardNo%>
+                </p>
+            </div>
+            </a>
+        </section>
+        <p class="_tips">
+            点击可修改绑定银行卡
+        </p>
+        <%}%>
+
+    </div>
+    <% include ../../template/navBar.html%>
+</body>
+</html>

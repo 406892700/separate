@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>帮助中心</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+    <style>
+        body{font-family: Microsoft YaHei;background-color: #fff;font-size:1.4rem;}
+        .gbox{height:auto;width:auto;background-color:#fff;}
+        .box1{height: 40px;border-bottom: solid 1px #eee;}
+        .active{-webkit-transform:rotateZ(90deg);}
+        .icon{-webkit-transition: .6s all;width:7px;height:12px;background-image:url(/images/icon_1.png);margin-left:10px;margin-top: 15px;}
+        .info_txt{color:#aaa;margin:10px 20px;text-align: left;line-height:1.8rem;}
+        .info_txt p{
+            line-height:1.8rem;
+        }
+        /**
+    *	flex布局 css样式
+    */
+        .flex,.flexRow{
+            display : -webkit-box; -webkit-box-orient : horizontal ;
+            display: flex ; display: -webkit-flex ; flex-direction : row ;
+            -webkit-flex-direction : row ;
+        }
+        .flexColumn{
+            display : -webkit-box; -webkit-box-orient : vertical ; display: flex ;
+            display: -webkit-flex ; flex-direction : column ; -webkit-flex-direction : column ;
+        }
+        .flex1{ box-flex:1; -webkit-box-flex:1; flex : 1 ; -webkit-flex : 1 ; position : relative; }
+        .flex2{ box-flex:2; -webkit-box-flex:2; flex : 2 ; -webkit-flex : 2 ; position : relative; }
+        .flex3{ box-flex:3; -webkit-box-flex:3; flex : 3 ; -webkit-flex : 3 ; position : relative; }
+        .flexCenter{ -webkit-box-align : center ; align-items : center ; -webkit-align-items : center ; }
+        .flexStart{ -webkit-box-align : start ; align-items : flex-start ; -webkit-align-items : flex-start ; }
+        .flexEnd{ -webkit-box-align : end ; align-items : flex-end ; -webkit-align-items : flex-end ; }
+        .flexBaseLine{ -webkit-box-align : baseline ; align-items : baseline ; -webkit-align-items : baseline ; }
+        .flexStretch{ -webkit-box-align : stretch ; align-items : stretch ; -webkit-align-items : stretch ; }
+        .dn{ display: none; }
+
+        /**		常用样式定义	**/
+
+        .pa{ position: absolute; }
+        .pa00{ position: absolute; top: 0; left: 0; }
+        .pa10{ position: absolute; bottom: 0; left: 0; }
+        .pa01{ position: absolute; top: 0; right: 0; }
+        .pa11{ position: absolute; bottom: 0; right: 0; }
+        .pr{ position: relative; }
+        .pf{ position: fixed; }
+
+        .ma{ margin: auto; }
+        .full{ width: 100%; height: 100%; }
+        .fullw{ width: 100%; }
+        .fullh{ height: 100%; }
+
+
+        .db{ display : block; }
+        .dib{ display : inline-block; }
+        .di{ display : inline; }
+        .oh{ overflow: hidden; }
+        .nE{ pointer-events: none; }
+        .aE{ pointer-events: auto; }
+
+        .fl{ float: left; }
+        .fr{ float: right; }
+        .lay > div { float: left; }
+        .lay2 > div { float: right; }
+
+        .tal{ text-align: left; }
+        .tar{ text-align: right; }
+        .tac{ text-align: center; }
+        .taj{ text-align: justify; }
+
+
+        .tab>div { display: table-cell; vertical-align: middle; }
+        .tab { display: table; border: 0px; border-spacing: 0px; text-align: center; }
+    </style>
+
+</head>
+<body>
+<div class="">
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >1、快速联系我们？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>客服电话：4000-655-699</p>
+                <p>客服QQ：2259356588  2722567020</p>
+                <p>服务时间：09:00-17:30（周一至周五）</p>
+                <p style="padding-left:5rem;">10:00-17:00（周六至周日）</p>
+                <p>联系邮箱：service@lrtzi.net</p>
+            </div>
+        </div>
+    </div>
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >2、什么是新手标？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>新手项目是懒人投资推出的只有新手才能投资的项目，新手指的是从未在懒人投资项目的用户。</p>
+            </div>
+        </div>
+    </div>
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >3、什么是资金托管？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>资金托管模式是指投资人和借款人分别在第三方支付平台的系统中开设账户，用户在交易时，资金全部直接从第三方支付平台进行划账处理，资金不会停留在懒人投资平台上，这样对用户的资金安全更加有保障。懒人投资所合作的第三方支付公司为联动优势。</p>
+            </div>
+        </div>
+    </div>
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >4、如何更换手机号码？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>手机端：进入个人账户→头像→账户设置→绑定手机</p>
+                <p>PC端：进入个人账户→账户设置→手机绑定→修改</p>
+                <p>若旧手机号无法接收短信，请联系客服办理，客服热线4000-655-699</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >5、如何绑定银行卡？	</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>手机端：进入个人账户→账户余额→银行卡管理</p>
+                <p>PC端：进入个人账户→充值提现→账户提现，如果未绑卡会要求进行绑卡</p>
+                <p>绑卡请填写本人真实有效借记卡信息，信用卡无法绑定成功</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >6、如何修改绑定银行卡？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>手机端：进入个人账户→账户余额→银行卡管理，点击已绑定银行卡即可进入更换银行界面</p>
+                <p>PC端：进入个人账户→充值提现→账户提现，点击已绑定的银行卡即可进入更换银行卡界面</p>
+                <p>绑卡请填写本人真实有效借记卡信息，信用卡无法绑定成功</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >7、如何投资？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>进入项目列表，选择优质理财项目，输入投资金额，点击投资即可</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >8、什么是红包，如何使用？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>红包用于投资时抵扣投资金额，相当于一种抵扣券，输入投资金额时选择使用相应的红包即可，比如投资10000元，选择使用红包10元，则用户实际支付金额为9990元即可享受10000元的本息。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >9、什么是加息券，如何使用？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>加息券顾名思义它是给用户投资增加收益的一种福利，比如项目预期年化率为12%，加息券利率为1%，则用户投资成功后享用12%+1%=13%的年化收益，为了您的利益最大化，请在投资金额较大时再选择使用。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >10、项目怎样还款，利息怎么计算？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>目前网站项目主要用两种还款方式：按月付息到期还本和到期结清，利息=（投资金额*预期年化）/360*实际投资天数</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >11、账户取现到账时间？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>工作日17:30分之前的取现申请T+0到账，17:30分之后的取现申请，将于第二个工作日到账。</p>
+                <p>若遇节假日顺延，每周一因需要审核周五、周六、周日三天的取现申请，因此略有延时。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >12、如何充值？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>手机端：手机端目前仅支持借记卡快捷充值，充值前需先绑定银行卡并前端借记卡快捷协议，快捷借记卡绑卡时输入的银行卡预留手机号需与借记卡预留手机号一致，充值时需用户短信验证码验证，用户无需担心资金安全。</p>
+                <p>PC端：进入我的账户，选择充值取现，选择充值，然后选择相应的银行，输入充值金额即可。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >13、网银充值支持银行及限额？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p><img src="/images/helper_table1.png" alt="" width="100%" /></p>
+                <p>选择网银充值目前支付公司不做限额处理，取决于您的银行卡网银额度设定。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >14、借记卡快捷充值支持银行及限额？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p><img src="/images/helper_table2.png" alt="" width="100%" /></p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >15、信用卡可以充值吗？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>暂不支持信用卡充值，手机端充值需绑定借记卡快捷，或绑定银行卡时在联动优势绑卡界面勾选签约快捷银行卡。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='gbox'>
+        <div class="box1 flex" >
+            <div class="icon" ></div>
+            <div class="text" style='margin-left:13px;line-height:40px;' >16、到期日回款具体时间点是什么时候？</div>
+        </div>
+        <div class="info_box" style='height:auto;display:none;'>
+            <div class="info_txt" >
+                <p>一般在到期日的当天下午15:00前回到账户余额</p>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../../template/navBar.html%>
+</body>
+
+</html>

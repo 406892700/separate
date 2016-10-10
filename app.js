@@ -5,6 +5,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 var ejs = require('ejs');
 
 var app = express();
@@ -26,6 +27,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'views/static')));//静态资源路径
 
+app.use(session({
+  secret: ((Math.random()+'').slice(2)*1).toString(36), // 建议使用 128 个字符的随机字符串
+  cookie: { maxAge: 60 * 1000 * 30 }
+}));
+//配置session
+
 
 var routes = require('./routes');//路由配置文件
 //读取路由配置
@@ -33,6 +40,7 @@ routes.map((v,i)=>{
   v.controller(router);
   app.use(v.route,router);
 });
+
 
 // catch 404 and forward to error handler
 //404处理文件
@@ -67,6 +75,8 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+
 
 
 

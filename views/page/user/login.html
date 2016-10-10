@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>懒人登录</title>
     <% include ../../template/cssRes.html%>
     <link rel='stylesheet' href='/css/login/login.css' />
     <% include ../../template/meta.html%>
@@ -15,16 +15,15 @@
 	  <div class="name bg"></div>
   </header>
   <form action="" id="loginForm">
-	  <input type="text" style='width:0;height: 0;opacity: 0;'>
 	  <section class="loginForm">
 		  <div class="item">
 			  <span class="bg icon-mobile"></span>
-			  <input type="text" placeholder="输入手机号码" name="mobile" >
+			  <input type="text" placeholder="输入手机号码" name="mobile" value="18668147170">
 		  </div>
 		  <div class="item">
 			  <span class="bg icon-psw"></span>
 
-			  <input type="password" placeholder="输入密码" name="password" >
+			  <input type="password" placeholder="输入密码" name="password" value="yw123123">
 		  </div>
 
 		  <div class="item font_middle align_right">
@@ -40,5 +39,9 @@
   <div class="tips">
 	  杭州懒人网络科技有限公司
   </div>
+
+  <script>
+	  require(['user/login']);
+  </script>
   </body>
 </html>

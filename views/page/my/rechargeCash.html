@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_myRecordRechargeCashSec paddingBtm">
+    <div id="header">
+        <aside class="lrToolBar">
+            <ul class="dataArgs">
+                <li data-arg="status">
+                    <span class="title">状态</span>
+                    <a href="javascript:void(0)" class="actived" data-value="99">全部</a>
+                    <a href="javascript:void(0)" data-value="1">成功</a>
+                    <a href="javascript:void(0)" data-value="0">处理中</a>
+                    <a href="javascript:void(0)" data-value="9">失败</a>
+                </li>
+                <!-- 筛选条件 -->
+
+                <li data-arg="type">
+                    <span class="title">类型</span>
+                    <a href="javascript:void(0)" class="actived" data-value="0">充值</a>
+                    <a href="javascript:void(0)" data-value="1">提现</a>
+                </li>
+                <!-- 筛选条件 -->
+            </ul>
+        </aside>
+        <!-- 公用筛选 -->
+    </div>
+    <section class="recordList">
+        <ul id="list">
+            <%for(var i=0;i< list.length;i++){%>
+            <li class="record <% if(list[i].state == 1){%>success<%}else{%>going<%}%>">
+                <p>
+                    <span class="f_left type"><%=list[i].title%></span>
+                    <span class="f_right value"><%=list[i].amount%></span>
+                </p>
+                <p>
+                    <span class="f_left date"><%=list[i].addTime%></span>
+				<span class="f_right status">
+					<% if(list[i].state == 0){%>
+						处理中
+					<%}else if(list[i].state == 1){%>
+						成功
+					<%}else if(list[i].state == 2){%>
+						审核中
+					<%}else if(list[i].state == 4){%>
+						申请中
+					<%}else if(list[i].state == 9){%>
+						失败
+					<%}%>
+				</span>
+                </p>
+            </li>
+            <%}%>
+        </ul>
+    </section>
+    <% include ../../template/navBar.html%>
+</body>
+
+</html>

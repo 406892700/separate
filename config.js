@@ -10,7 +10,7 @@ $CFG = {
 	/**
 	 * 数据相关配置
 	 */
-	REDIS_HOST:'localhost',//redis host
+	REDIS_HOST:'114.55.90.27',//redis host
 	REDIS_PORT:6379,//redis 端口号
 	DB_HOST:'localhost', //数据库 host
 	DB_PORT:3306, //数据库 端口号

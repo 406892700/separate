@@ -20,7 +20,7 @@ const fetchSOAP = (obj,callback)=>{
 	var options = {
 	  hostname: $CFG.API_HOST,
 	  port: $CFG.API_PORT,
-	  method: $CFG.method,
+	  method: obj.method,
 	  headers:{ 
 		  'content-length': dataString.length,
 		  'content-type': 'text/plain',
@@ -36,13 +36,12 @@ const fetchSOAP = (obj,callback)=>{
 	}
 
 	var req = https.request(options, (res) => {
-	  console.info('----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-	  console.info('请求状态码:', res.statusCode);
-	  console.info('请求头:', res.headers);
+	  //console.info('----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+	  //console.info('请求状态码:', res.statusCode);
+	  //console.info('请求头:', res.headers);
 	  var chunk = '';
 	  
 	  res.on('data', (data) => {
-	    
 	    chunk+=data.toString();
 	  });
 

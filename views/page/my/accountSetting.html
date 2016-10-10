@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账户设置</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_mySettingSec paddingBtm" style="height: 100%; box-sizing: content-box; ">
+    <section class="lrItemList">
+        <% if(account.isRealNameState == 1){%>
+        <a class="item separate" >
+            <p class="title">实名认证</p>
+            <p class="descrition"><%=account.realName%></p>
+        </a>
+        <%}else{%>
+        <a class="item arrow separate" href="/my/account/realname">
+            <p class="title">实名认证</p>
+            <p class="descrition">未认证</p>
+        </a>
+        <%}%>
+
+        <%if(account.isPhoneState == 1){%>
+        <a class="item arrow" href="/my/account/bindPhone">
+            <p class="title">绑定手机</p>
+            <p class="descrition"><%=account.mobile%></p>
+        </a>
+        <%}else{%>
+        <a class="item arrow" href="/my/account/bindPhone">
+            <p class="title">绑定手机</p>
+            <p class="descrition">未绑定</p>
+        </a>
+        <%}%>
+
+        <div class="item">
+            <p class="title">邮箱验证</p>
+            <p class="descrition"><% if(account.isEmailState ==1){%><%=account.email%><%}else{%>未绑定<%}%></p>
+        </div>
+
+        <a class="item arrow separate"  id="quickInverstItem" data-status="<%=account.isRealNameState%>" href="/account/quick/index">
+            <p class="title">快捷投资</p>
+            <p class="descrition"><% if(account.quickInverst ==1){%><span class="main_red">已开通</span><%}else{%>未绑定<%}%></p>
+        </a>
+
+    </section>
+
+    <footer class="lrBtnArea">
+        <a href="javascript:void(0)" class="btn btnSubmit" id="quitAccount">退出账户</a>
+    </footer>
+    <% include ../../template/navBar.html%>
+</body>
+</html>

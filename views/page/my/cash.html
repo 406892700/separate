@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>可用余额</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_mySettingRestCashSec paddingBtm">
+    <div id="container">
+        <section class="lrItemList">
+            <a class="item arrow separate" href="/cash/record">
+                <p class="title">账户余额</p>
+                <p class="descrition"><%=accountObj.usable%>元</p>
+            </a>
+            <a class="item arrow needCheck" href="/my/cash/setRecharge">
+                <p class="title">充值</p>
+            </a>
+            <a class="item arrow needCheck" href="/my/cash/setCash">
+                <p class="title">提现</p>
+            </a>
+            <a class="item arrow needCheck" href="/my/cash/cardList">
+                <p class="title">银行卡管理</p>
+            </a>
+        </section>
+    </div>
+    <% include ../../template/navBar.html%>
+</body>
+</html>

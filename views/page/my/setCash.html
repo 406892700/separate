@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提现</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+    <style>
+        ._mySettingRestCashSec #explainTipsMask{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            box-sizing: border-box;
+            color: #666;
+            z-index: 99990999999;
+            display:none;
+        }
+
+        ._mySettingRestCashSec #explainTipsMask .content{
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: left;
+            top: 5%;
+            color: #333;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            max-height: 90%;
+            overflow-y: scroll;
+        }
+
+        ._mySettingRestCashSec #explainTipsMask .content > p.title{
+            font-size:1.6rem;
+            margin:5px 0px;
+        }
+
+        ._mySettingRestCashSec #explainTipsMask .content .btn{
+            display:block;
+            margin:20px auto;
+            width:150px;
+            height:35px;
+            line-height:35px;
+            color:#fff;
+            background-color:#ff4444 ;
+            border-radius:3px;
+            font-size:1.6rem;
+            text-align:center;
+        }
+    </style>
+</head>
+<body class="_mySettingRestCashSec paddingBtm" style="height: 100%; box-sizing: content-box; "  >
+    <section class="lrItemList">
+        <div class="item separate">
+            <div class="myBankIcon">
+                <img src="/images/bankIcon/<%=account.bankCode%>.png" alt="<%=account.bankName%>" width="100%" height="100%">
+            </div>
+            <div class="myBankCardInfo">
+                <p class="name"><%=account.bankName%></p>
+                <p class="cardNo">卡号：<%=account.cardNo%></p>
+            </div>
+        </div>
+        <!-- 银行卡信息 -->
+        <aside class="myTips">
+
+        </aside>
+    </section>
+    <form id="formSubmit">
+        <section class="lrFormList">
+            <div class="formItem separate">
+                <p class="label">金&nbsp;&nbsp;&nbsp;额</p>
+                <p class="textField"><input type="text" placeholder="请输入提现金额" name="cashAmount"></p>
+            </div>
+            <aside class="myTips">
+                <!-- 每笔限额50,000.00元 -->
+                <a href="javascript:void(0)" class="main_red" id="cashExplain" style="    margin-left: 30px;">取现说明</a>
+                <span class="leftTimes f_right">本月免费取现次数:<%=account.count%></span>
+            </aside>
+        </section>
+    </form>
+
+    <div id="explainTipsMask">
+        <div class="content">
+            <p class="title">1、到帐时间</p>
+            <p>工作日17:30分之前的取现申请T+0到账，17:30分之后的取现申请，将于第二个工作日到账。</p>
+            <p>若遇节假日顺延，每周一因需要审核周五、周六、周日三天的取现申请，因此略有延时。</p>
+            <p class="title">2、取现支持银行</p>
+            <p>中国银行、农业银行、招商银行、工商银行、建设银行、交通银行、邮储银行、民生银行、中信银行、光大银行、华夏银行、广发银行、兴业银行、浦发银行、浙商银行、平安银行、河北银行、兰州银行</p>
+            <p class="title">3、取现手续费</p>
+            <p>手续费单笔2元（不限额）；</p>
+            <p>每月前5笔取现手续费完全由平台垫付，超过5笔手续费由用户自行支付，用户操作取现将使用一次免费取现，如跳转至联动优势未操作或放弃取现，1小时后免费取现次数将返还；</p>
+            <p class="main_red">手续费完全由联动优势收取，平台不收取任何取现费用；</p>
+            <a href="javascript:void(0)" class="btn">我知道啦</a>
+        </div>
+    </div>
+
+
+    <footer class="lrBtnArea">
+        <a href="javascript:void(0)" class="btn btnSubmit" id="btnSubmit">确认</a>
+    </footer>
+
+    <% include ../../template/navBar.html%>
+</body>
+</html>

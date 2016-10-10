@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>充值</title>
+    <% include ../../template/cssRes.html%>
+    <link rel='stylesheet' href='/css/my/my.css' />
+    <% include ../../template/meta.html%>
+    <% include ../../template/jsRes.html%>
+</head>
+<body class="_mySettingRestCashSec paddingBtm" style="height: 100%; box-sizing: content-box; ">
+    <section class="lrItemList">
+        <div class="item separate">
+            <div class="myBankIcon">
+                <img src="/images/bankIcon/<%=account.bankCode%>.png" alt="<%=account.bankName%>" width="100%" height="100%">
+            </div>
+            <div class="myBankCardInfo">
+                <p class="name"><%=account.bankName%></p>
+                <p class="cardNo">卡号：<%=account.cardNo%></p>
+            </div>
+        </div>
+        <!-- 银行卡信息 -->
+        <aside class="myTips">
+
+        </aside>
+    </section>
+    <form id="formSubmit">
+        <section class="lrFormList">
+            <div class="formItem separate">
+                <p class="label">金&nbsp;&nbsp;&nbsp;额</p>
+                <input type="hidden" value="<%=account .bankCode%>" name="bankCode">
+                <p class="textField"><input type="number" placeholder="充值金额" name="amount" pattern="[0-9]*"></p>
+            </div>
+
+        </section>
+    </form>
+
+
+    <footer class="lrBtnArea">
+        <a href="javascript:void(0)" class="btn btnSubmit" id="btnSubmit">确认</a>
+    </footer>
+    <% include ../../template/navBar.html%>
+</body>
+</html>
