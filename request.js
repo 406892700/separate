@@ -46,6 +46,7 @@ const fetchSOAP = (obj,callback)=>{
 	  });
 
 	  res.on('end', () => {
+	  	console.log(chunk);
 		callback(null,JSON.parse(chunk));
 		  console.log('接口数据',JSON.parse(chunk));
 		  console.log('----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------');

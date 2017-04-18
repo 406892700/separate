@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "express-session": "^1.14.1",
+    "http-proxy-middleware": "^0.17.4",
     "log4js": "^0.6.38",
     "mysql": "felixge/node-mysql",
     "redis": "^2.6.2"

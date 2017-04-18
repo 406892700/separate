@@ -18,11 +18,24 @@ const getRedisClient = ()=>{//获取redisClient
         port:$CFG.REDIS_PORT
     });
 };
+
+
+/*
+ * 处理post请求（urlencoded类型的）
+ *
+ * */
+const handlePost = () => {
+    var bodyParser = require('body-parser'),
+        urlencodedParser = bodyParser.urlencoded({ extended: false });
+
+    return  urlencodedParser;
+};
 /*
 const extends = Object.assign;*/
 
 module.exports = {
 	sync:generator,
 	extends:Object.assign,
-    getRedisClient:getRedisClient
+    getRedisClient:getRedisClient,
+    handlePost:handlePost
 };

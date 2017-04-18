@@ -35,11 +35,60 @@ app.use(session({
 
 
 var routes = require('./routes');//路由配置文件
+
+
+
+/*app.get('/', function (req, res) {
+  res.sendFile(__dirname + '/index.html');
+});*/
+
+
+
+//设置跨域访问
+router.all('*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+  res.header("Content-Type", "application/json;charset=utf-8");
+  next();
+});
+
+router.get('/getListx',(req,res,next)=>{
+    var fc = req.query.callback;
+    var list = {list:[{text:'念鑫',key:'1'}, {text:'钱鑫',key:'2'}, {text:'安鑫',key:'3'}]};
+
+
+    var callback = fc+'('+JSON.stringify(list)+');';
+
+    res.end(callback);
+});
+
 //读取路由配置
-routes.map((v,i)=>{
+routes.map((v)=>{
   v.controller(router);
   app.use(v.route,router);
 });
+
+var proxy = require('http-proxy-middleware');
+
+app.use('/api', proxy({
+      target: 'https://m.nianqa.com',
+      changeOrigin: true,
+      headers: {
+        Referer: 'https://m.nianqa.com/'
+      }
+    }
+));
+
+app.use('/Mobile2', proxy({
+      target: 'https://m.nianqa.com',
+      changeOrigin: true,
+      headers: {
+        Referer: 'https://m.nianqa.com/'
+      }
+    }
+));
+
 
 
 // catch 404 and forward to error handler
@@ -51,6 +100,7 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
+
 
 // development error handler
 // will print stacktrace

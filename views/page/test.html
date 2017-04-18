@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<body>
+	<!-- <ul id="nav">
+		<li><a href="javascript:void(0)" id="1">tab1</a></li>
+		<li><a href="javascript:void(0)" id="2">tab2</a></li>
+		<li><a href="javascript:void(0)" id="3">tab3</a></li>
+		<li><a href="javascript:void(0)" id="4">tab4</a></li>
+	</ul>
+	
+	<script>
+		var $nav = document.getElementById('nav');
+		$nav.addEventListener('click',function(evt){
+			var $this = evt.target;
+			if($this.tagName.toLowerCase() != 'a'){
+				return;
+			}
+	
+			history.pushState({},null,'?$this.id');
+		});
+	</script> -->
+	<script>
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4 && xhr.status == 200){
+				//console.log(xhr.responseText);
+				var obj = JSON.parse(xhr.responseText);
+				parse(obj);
+			}
+		}
+
+		xhr.open('GET','getJson');
+		xhr.send(null);
+
+
+		var parse = function(obj){
+			console.log(obj);
+			obj = obj.Body;
+			obj.map(function(v,i){
+				v.Children.map(function(v1,j){
+					if(v1 && v1.Children){
+						v1.Children.map(function(v2,k){
+							if(v2.Children){
+								var copy = JSON.parse(JSON.stringify(v2));
+								obj[i].Children.push(copy);
+								obj[i].Children[j].Children[k] = undefined;
+							}
+						});
+					}
+
+				});
+			});
+
+			console.log(obj);
+			return obj;
+
+		}
+	</script>
+</body>
+</html>
